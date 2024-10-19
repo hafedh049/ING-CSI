@@ -148,7 +148,3 @@ Here is the **breakdown of epics, user stories (UCs), and tasks** based on your 
 ### **UC-29:** *Logout remotely from all devices*  
 - **Task 29.1:** Build "Manage Devices" screen  
 - **Task 29.2:** Implement remote logout  
-
----
-
-This structured breakdown aligns with your table, providing a clear flow from **epics to UCs and tasks**, ensuring the team can work efficiently within Scrum. Let me know if more details or changes are needed!
