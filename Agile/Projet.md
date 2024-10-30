@@ -1,17 +1,17 @@
 ## **Product Backlog : Clone WhatsApp avec Fonctionnalités Avancées**
 
-| **USID** | **Description** | **Estimation (heures)** | **Priorité** | **Définition of Done (DoD)** |
+| **USID** | **User Story** | **Estimation (heures)** | **Priorité** | **Définition of Done (DoD)** |
 |----------|----------------|-------------------------|--------------|-----------------------------|
-| US01     | Inscription et connexion avec le numéro de téléphone | 30h | Must | Les utilisateurs peuvent s’inscrire et se connecter avec un code OTP reçu par SMS. |
-| US02     | Gestion de profil utilisateur avec photo et statut | 20h | Should | L’utilisateur peut modifier son nom, son statut, et sa photo de profil. |
-| US03     | Envoi et réception de messages texte, audio et vidéo | 40h | Must | L’utilisateur peut envoyer et recevoir du texte, des audios et des vidéos sans erreur. |
-| US04     | Conversion audio-texte automatique des messages vocaux | 60h | Could | Les messages vocaux sont transcrits avec une précision d’au moins 80 %. |
-| US05     | Messagerie éphémère avec expiration configurable | 50h | Must | Les messages disparaissent automatiquement après le délai défini par l’utilisateur. |
-| US06     | Suggestions IA de réponses contextuelles | 70h | Could | Affiche au moins 3 suggestions pertinentes par message reçu. |
-| US07     | Historique complet des discussions et statistiques d’utilisation | 40h | Should | L’utilisateur peut consulter l’historique de ses conversations et des statistiques de chat. |
-| US08     | Sondages interactifs pour les discussions de groupe | 30h | Should | Les utilisateurs peuvent créer et participer à des sondages dans les groupes. |
-| US09     | Cartes d’activité interactives pour engagement dans les groupes | 35h | Could | Les utilisateurs peuvent partager des cartes d’activité dans les groupes. |
-| US10     | Mode sombre et clair personnalisable | 15h | Should | L’utilisateur peut changer entre le mode sombre et le mode clair via les paramètres. |
+| **US01** | En tant qu’utilisateur, je veux pouvoir m’inscrire et me connecter avec mon numéro de téléphone afin d’accéder à l’application. | 30h | Must | Connexion réussie via code OTP SMS, sans erreurs. |
+| **US02** | En tant qu’utilisateur, je veux gérer mon profil avec photo et statut pour personnaliser mon compte. | 20h | Should | L’utilisateur peut modifier le nom, le statut et la photo via l’interface. |
+| **US03** | En tant qu’utilisateur, je veux envoyer et recevoir des messages texte, audio et vidéo pour communiquer avec mes contacts. | 40h | Must | Envoi et réception de texte, audio et vidéo fonctionnels. |
+| **US04** | En tant qu’utilisateur, je veux que mes messages vocaux soient automatiquement transcrits en texte afin de les lire rapidement. | 60h | Could | Les messages vocaux sont transcrits avec au moins 80 % de précision. |
+| **US05** | En tant qu’utilisateur, je veux envoyer des messages éphémères pour que ceux-ci disparaissent après un certain délai. | 50h | Must | Les messages sont automatiquement supprimés après le délai choisi. |
+| **US06** | En tant qu’utilisateur, je veux recevoir des suggestions automatiques d’IA pour répondre rapidement aux messages reçus. | 70h | Could | L’IA propose au moins 3 suggestions pertinentes par message. |
+| **US07** | En tant qu’utilisateur, je veux consulter l’historique de mes discussions et voir des statistiques d’utilisation pour suivre mon activité. | 40h | Should | Accès à l’historique et affichage des statistiques de chat. |
+| **US08** | En tant qu’utilisateur de groupe, je veux créer et participer à des sondages pour engager les participants. | 30h | Should | Création et participation aux sondages sans erreurs. |
+| **US09** | En tant que membre de groupe, je veux partager des cartes d’activité afin de collaborer avec les autres participants. | 35h | Could | Les cartes d’activité sont accessibles à tous les membres du groupe. |
+| **US10** | En tant qu’utilisateur, je veux pouvoir activer un mode sombre ou clair pour personnaliser mon expérience d’utilisation. | 15h | Should | L’utilisateur peut basculer entre les modes sombre et clair. |
 
 ---
 
@@ -26,24 +26,24 @@
 
 #### **Tâches Techniques :**
 - **US01** :  
-  - Intégration de l’authentification avec Firebase (2 jours)  
-  - Gestion OTP avec Twilio API (3 jours)  
-  - UI/UX pour inscription et connexion (1 jour)  
+  - Intégrer Firebase Authentication (2 jours)  
+  - Configurer OTP avec Twilio API (3 jours)  
+  - Interface d’inscription et connexion (1 jour)  
 
 - **US02** :  
-  - Création de l’interface de profil utilisateur (1 jour)  
-  - Gestion des mises à jour de photo et de statut via Firestore (2 jours)  
+  - Écran de gestion du profil (1 jour)  
+  - Mise à jour du profil dans Firestore (2 jours)  
 
 - **US03** :  
-  - Implémentation de la messagerie instantanée avec WebSocket (3 jours)  
-  - Gestion de l’envoi de fichiers audio et vidéo (2 jours)  
+  - Implémenter WebSocket pour messagerie instantanée (3 jours)  
+  - Ajouter l’envoi de fichiers audio et vidéo (2 jours)  
 
 **Sprint Review :**  
-Les utilisateurs peuvent s’inscrire, se connecter, configurer leur profil et utiliser la messagerie de base pour envoyer du texte, des audios et des vidéos.
+Les utilisateurs peuvent s’inscrire, se connecter et utiliser la messagerie instantanée avec leur profil personnalisé.
 
 **Rétrospective :**  
-- **Points Positifs :** Bonne coordination entre l’équipe front et back.  
-- **Amélioration :** Mieux gérer le temps lors de l’intégration Firebase pour éviter des retards.
+- **Points Positifs :** Bonne coordination entre les équipes front et back.  
+- **Amélioration :** Optimiser la configuration d’OTP pour réduire les erreurs.
 
 ---
 
@@ -51,58 +51,58 @@ Les utilisateurs peuvent s’inscrire, se connecter, configurer leur profil et u
 
 - **User Stories :**  
   - **US05** : Messagerie éphémère avec expiration configurable  
-  - **US06** : Suggestions IA de réponses contextuelles
+  - **US06** : Suggestions IA pour les réponses contextuelles
 
 #### **Tâches Techniques :**
 - **US05** :  
-  - Implémentation des timers d’expiration dans Firestore (2 jours)  
-  - UI pour configurer les délais d’expiration (1 jour)  
-  - Tests et correction de bugs (1 jour)  
+  - Ajouter la gestion des délais dans Firestore (2 jours)  
+  - UI pour configurer l’expiration des messages (1 jour)  
+  - Tests d’expiration (1 jour)  
 
 - **US06** :  
-  - Intégration de l’API OpenAI pour suggestions contextuelles (3 jours)  
-  - Création d’un composant UI pour afficher les suggestions (2 jours)  
-  - Tests d’intégration et optimisation (2 jours)  
+  - Intégrer l’API OpenAI (3 jours)  
+  - Composant UI pour suggestions IA (2 jours)  
+  - Tests et ajustements (2 jours)  
 
 **Sprint Review :**  
-Les utilisateurs peuvent envoyer des messages éphémères et recevoir des suggestions automatiques d’IA pour répondre.
+Les utilisateurs peuvent envoyer des messages éphémères et profiter de suggestions d’IA.
 
 **Rétrospective :**  
-- **Points Positifs :** L’implémentation des suggestions d’IA a été fluide.  
-- **Amélioration :** Mieux anticiper les besoins de test pour la messagerie éphémère.
+- **Points Positifs :** Intégration rapide des API IA.  
+- **Amélioration :** Anticiper les besoins en tests plus complexes.
 
 ---
 
-### **Sprint 3 : Historique des Discussions, Sondages et Cartes d’Activité**
+### **Sprint 3 : Historique, Sondages et Cartes d’Activité**
 
 - **User Stories :**  
-  - **US07** : Historique complet des discussions et statistiques  
-  - **US08** : Sondages interactifs pour les discussions de groupe  
-  - **US09** : Cartes d’activité interactives  
+  - **US07** : Historique des discussions et statistiques  
+  - **US08** : Sondages interactifs  
+  - **US09** : Cartes d’activité partagées
 
 #### **Tâches Techniques :**
 - **US07** :  
-  - Stockage de l’historique des discussions dans Firestore (2 jours)  
-  - Création d’un tableau de bord statistique simple (2 jours)  
+  - Stocker l’historique dans Firestore (2 jours)  
+  - Ajouter des statistiques basiques (2 jours)  
 
 - **US08** :  
-  - Création du modèle de sondage dans Firestore (2 jours)  
-  - UI/UX pour les sondages de groupe (2 jours)  
+  - Modèle de sondage dans Firestore (2 jours)  
+  - Interface pour sondages (2 jours)  
 
 - **US09** :  
-  - Implémentation des cartes d’activité avec actions partagées (3 jours)  
-  - Tests d’interface utilisateur (1 jour)  
+  - Implémentation des cartes d’activité (3 jours)  
+  - Tests UI (1 jour)  
 
 **Sprint Review :**  
-Les utilisateurs peuvent consulter l’historique des discussions, participer à des sondages, et partager des cartes d’activité dans les groupes.
+Les utilisateurs peuvent accéder à l’historique des conversations, participer à des sondages, et partager des cartes d’activité.
 
 **Rétrospective :**  
-- **Points Positifs :** Bonne gestion du backlog et respect des délais.  
-- **Amélioration :** Améliorer la gestion des feedbacks utilisateurs après les tests.
+- **Points Positifs :** Bonne gestion des délais et des priorités.  
+- **Amélioration :** Renforcer la communication avec les utilisateurs finaux pour obtenir plus de feedbacks.
 
 ---
 
-## **Résumé des Sprints et Avancement**
+## **Résumé des Sprints**
 
 | **Sprint** | **User Stories Couvertes** | **Statut** |
 |------------|----------------------------|------------|
