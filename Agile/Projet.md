@@ -1,150 +1,111 @@
-| **UCID** | **Description**                                                                                       | **Score** | **Priority** | **Definition of Done**                                                  |
-| -------- | ----------------------------------------------------------------------------------------------------- | --------- | ------------ | ----------------------------------------------------------------------- |
-| UC-01    | En tant qu'utilisateur, je veux m'inscrire avec mon numéro de téléphone pour accéder à l'application. | 3         | Must         | Inscription réussie et redirection vers l'écran d'accueil.              |
-| UC-02    | En tant qu'utilisateur, je veux vérifier mon numéro de téléphone via OTP.                             | 5         | Must         | OTP envoyé et vérifié dans le délai imparti.                            |
-| UC-03    | En tant qu'utilisateur, je veux me connecter automatiquement après inscription.                       | 3         | Must         | Connexion automatique sans nouvelle demande d'OTP sur le même appareil. |
-| UC-04    | En tant qu'utilisateur, je veux mettre à jour ma photo de profil et mon nom.                          | 2         | Should       | Mise à jour du profil reflétée immédiatement.                           |
-| UC-05    | En tant qu'utilisateur, je veux gérer les paramètres de confidentialité de mon statut.                | 4         | Should       | Modifications enregistrées et appliquées.                               |
-| UC-06    | En tant qu'utilisateur, je veux envoyer et recevoir des messages en temps réel.                       | 8         | Must         | Messages envoyés et reçus instantanément.                               |
-| UC-07    | En tant qu'utilisateur, je veux supprimer des messages pour tout le monde dans une limite de temps.   | 5         | Must         | Message supprimé avec confirmation pour tous les participants.          |
-| UC-08    | En tant qu'utilisateur, je veux créer des groupes avec plusieurs participants.                        | 6         | Must         | Groupe créé avec succès et participants ajoutés.                        |
-| UC-09    | En tant qu'utilisateur, je veux rechercher des messages par mot-clé.                                  | 5         | Should       | Résultats de recherche affichés correctement.                           |
-| UC-10    | En tant qu'utilisateur, je veux épingler des conversations en haut de la liste.                       | 3         | Should       | Conversation épinglée correctement.                                     |
-| UC-11    | En tant qu'utilisateur, je veux désactiver les notifications pour des chats spécifiques.              | 4         | Should       | Aucune notification pour les chats désactivés.                          |
-| UC-12    | En tant qu'utilisateur, je veux envoyer et recevoir des images, vidéos et fichiers audio.             | 8         | Must         | Médias envoyés, reçus et prévisualisés avec succès.                     |
-| UC-13    | En tant qu'utilisateur, je veux partager des contacts et ma position en direct.                       | 5         | Should       | Position et contacts partagés correctement.                             |
-| UC-14    | En tant qu'utilisateur, je veux archiver des conversations sans les supprimer.                        | 4         | Should       | Conversations accessibles depuis l'archive.                             |
-| UC-15    | En tant qu'utilisateur, je veux publier des statuts qui disparaissent après 24 heures.                | 6         | Must         | Statut publié et supprimé automatiquement après 24 heures.              |
-| UC-16    | En tant qu'utilisateur, je veux voir les statuts de mes contacts.                                     | 5         | Must         | Statuts visibles dans la section appropriée.                            |
-| UC-17    | En tant qu'utilisateur, je veux voir qui a consulté mon statut.                                       | 3         | Could        | Compteur de vues affiché correctement.                                  |
-| UC-18    | En tant qu'utilisateur, je veux masquer ou réactiver les statuts de certains contacts.                | 4         | Could        | Paramètres de statut enregistrés.                                       |
-| UC-19    | En tant qu'utilisateur, je veux recevoir des notifications pour les messages et appels.               | 6         | Must         | Notifications reçues instantanément.                                    |
-| UC-20    | En tant qu'utilisateur, je veux passer et recevoir des appels vocaux.                                 | 8         | Must         | Appels connectés avec une qualité sonore claire.                        |
-| UC-21    | En tant qu'utilisateur, je veux passer et recevoir des appels vidéo.                                  | 8         | Must         | Appels vidéo connectés avec fluidité.                                   |
-| UC-22    | En tant qu'utilisateur, je veux basculer entre l'appel vocal et vidéo.                                | 6         | Could        | Basculement effectué sans interruption.                                 |
-| UC-23    | En tant qu'utilisateur, je veux voir l'historique des appels et les appels manqués.                   | 5         | Should       | Historique des appels mis à jour correctement.                          |
-| UC-24    | En tant qu'utilisateur, je veux activer l'authentification à deux facteurs.                           | 7         | Should       | Authentification configurée et testée avec succès.                      |
-| UC-25    | En tant qu'utilisateur, je veux un chiffrement de bout en bout pour mes messages et appels.           | 10        | Must         | Messages sécurisés par chiffrement.                                     |
-| UC-26    | En tant qu'utilisateur, je veux bloquer et signaler des contacts suspects.                            | 5         | Should       | Actions de blocage et signalement enregistrées immédiatement.           |
-| UC-27    | En tant qu'utilisateur, je veux personnaliser le thème de l'application (mode clair/sombre).          | 3         | Could        | Changement de thème appliqué partout.                                   |
-| UC-28    | En tant qu'utilisateur, je veux accéder à l'application sur mon ordinateur via un code QR.            | 7         | Should       | Connexion réussie et synchronisée avec le mobile.                       |
-| UC-29    | En tant qu'utilisateur, je veux me déconnecter de tous les appareils à distance.                      | 5         | Could        | Déconnexion effectuée avec succès.                                      |
-| UC-30    | En tant qu'utilisateur, je veux sauvegarder mes chats et médias sur le cloud.                         | 9         | Must         | Sauvegarde effectuée et restaurable.                                    |
-| UC - 31  | As a user, I want to change the application language to my preferred language.                        | 4         | Should       | Language change applied throughout the app and reflected immediately.   |
-Here is the **breakdown of epics, user stories (UCs), and tasks** based on your table:  
+## **Product Backlog : Clone WhatsApp avec Fonctionnalités Avancées**
+
+| **USID** | **Description** | **Estimation (heures)** | **Priorité** | **Définition of Done (DoD)** |
+|----------|----------------|-------------------------|--------------|-----------------------------|
+| US01     | Inscription et connexion avec le numéro de téléphone | 30h | Must | Les utilisateurs peuvent s’inscrire et se connecter avec un code OTP reçu par SMS. |
+| US02     | Gestion de profil utilisateur avec photo et statut | 20h | Should | L’utilisateur peut modifier son nom, son statut, et sa photo de profil. |
+| US03     | Envoi et réception de messages texte, audio et vidéo | 40h | Must | L’utilisateur peut envoyer et recevoir du texte, des audios et des vidéos sans erreur. |
+| US04     | Conversion audio-texte automatique des messages vocaux | 60h | Could | Les messages vocaux sont transcrits avec une précision d’au moins 80 %. |
+| US05     | Messagerie éphémère avec expiration configurable | 50h | Must | Les messages disparaissent automatiquement après le délai défini par l’utilisateur. |
+| US06     | Suggestions IA de réponses contextuelles | 70h | Could | Affiche au moins 3 suggestions pertinentes par message reçu. |
+| US07     | Historique complet des discussions et statistiques d’utilisation | 40h | Should | L’utilisateur peut consulter l’historique de ses conversations et des statistiques de chat. |
+| US08     | Sondages interactifs pour les discussions de groupe | 30h | Should | Les utilisateurs peuvent créer et participer à des sondages dans les groupes. |
+| US09     | Cartes d’activité interactives pour engagement dans les groupes | 35h | Could | Les utilisateurs peuvent partager des cartes d’activité dans les groupes. |
+| US10     | Mode sombre et clair personnalisable | 15h | Should | L’utilisateur peut changer entre le mode sombre et le mode clair via les paramètres. |
 
 ---
 
-## **Epic 1: User Authentication and Profile Management**  
-### **UC-01:** *Sign up with a phone number*  
-- **Task 01.1:** Build phone number input screen  
-- **Task 01.2:** Implement API to register users  
-- **Task 01.3:** Redirect to home screen upon successful registration  
+## **Répartition en Sprints**
 
-### **UC-02:** *Verify phone number with OTP*  
-- **Task 02.1:** Generate OTP and send it via SMS  
-- **Task 02.2:** Create OTP input screen  
-- **Task 02.3:** Validate OTP within the set time  
+### **Sprint 1 : Authentification, Profil et Messagerie de Base**
 
-### **UC-03:** *Auto-login after sign-up*  
-- **Task 03.1:** Store user session securely  
-- **Task 03.2:** Implement auto-login logic  
-- **Task 03.3:** Skip OTP for already registered devices  
+- **User Stories :**  
+  - **US01** : Inscription et connexion avec le numéro de téléphone  
+  - **US02** : Gestion de profil utilisateur avec photo et statut  
+  - **US03** : Envoi et réception de messages texte, audio et vidéo
 
-### **UC-04:** *Update profile photo and name*  
-- **Task 04.1:** Create profile settings screen  
-- **Task 04.2:** Implement image upload logic  
-- **Task 04.3:** Ensure immediate profile update  
+#### **Tâches Techniques :**
+- **US01** :  
+  - Intégration de l’authentification avec Firebase (2 jours)  
+  - Gestion OTP avec Twilio API (3 jours)  
+  - UI/UX pour inscription et connexion (1 jour)  
 
----
+- **US02** :  
+  - Création de l’interface de profil utilisateur (1 jour)  
+  - Gestion des mises à jour de photo et de statut via Firestore (2 jours)  
 
-## **Epic 2: Chat and Messaging Features**  
-### **UC-06:** *Send and receive messages in real-time*  
-- **Task 06.1:** Integrate real-time messaging service  
-- **Task 06.2:** Create chat interface  
-- **Task 06.3:** Test message synchronization  
+- **US03** :  
+  - Implémentation de la messagerie instantanée avec WebSocket (3 jours)  
+  - Gestion de l’envoi de fichiers audio et vidéo (2 jours)  
 
-### **UC-07:** *Delete messages for everyone within time limits*  
-- **Task 07.1:** Add "Delete for Everyone" option  
-- **Task 07.2:** Implement message deletion logic  
-- **Task 07.3:** Notify participants about deleted messages  
+**Sprint Review :**  
+Les utilisateurs peuvent s’inscrire, se connecter, configurer leur profil et utiliser la messagerie de base pour envoyer du texte, des audios et des vidéos.
 
-### **UC-08:** *Create groups with multiple participants*  
-- **Task 08.1:** Build group creation screen  
-- **Task 08.2:** Allow participant selection and invitation  
-- **Task 08.3:** Store group data in the backend  
-
-### **UC-09:** *Search messages by keyword*  
-- **Task 09.1:** Implement search functionality  
-- **Task 09.2:** Display matching messages  
-- **Task 09.3:** Test search performance  
+**Rétrospective :**  
+- **Points Positifs :** Bonne coordination entre l’équipe front et back.  
+- **Amélioration :** Mieux gérer le temps lors de l’intégration Firebase pour éviter des retards.
 
 ---
 
-## **Epic 3: Media and File Sharing**  
-### **UC-12:** *Send and receive images, videos, and audio*  
-- **Task 12.1:** Integrate media picker  
-- **Task 12.2:** Handle file uploads and previews  
-- **Task 12.3:** Store media in the cloud  
+### **Sprint 2 : Messagerie Éphémère et Suggestions IA**
 
-### **UC-13:** *Share contacts and live location*  
-- **Task 13.1:** Implement contact sharing functionality  
-- **Task 13.2:** Integrate location services  
-- **Task 13.3:** Display shared data in chat  
+- **User Stories :**  
+  - **US05** : Messagerie éphémère avec expiration configurable  
+  - **US06** : Suggestions IA de réponses contextuelles
 
----
+#### **Tâches Techniques :**
+- **US05** :  
+  - Implémentation des timers d’expiration dans Firestore (2 jours)  
+  - UI pour configurer les délais d’expiration (1 jour)  
+  - Tests et correction de bugs (1 jour)  
 
-## **Epic 4: Status Management**  
-### **UC-15:** *Publish statuses that disappear after 24 hours*  
-- **Task 15.1:** Build status creation interface  
-- **Task 15.2:** Store statuses with expiration logic  
-- **Task 15.3:** Implement automatic status deletion  
+- **US06** :  
+  - Intégration de l’API OpenAI pour suggestions contextuelles (3 jours)  
+  - Création d’un composant UI pour afficher les suggestions (2 jours)  
+  - Tests d’intégration et optimisation (2 jours)  
 
-### **UC-16:** *View statuses from contacts*  
-- **Task 16.1:** Create status viewing interface  
-- **Task 16.2:** Fetch and display statuses in real-time  
+**Sprint Review :**  
+Les utilisateurs peuvent envoyer des messages éphémères et recevoir des suggestions automatiques d’IA pour répondre.
 
----
-
-## **Epic 5: Notifications and Alerts**  
-### **UC-19:** *Receive notifications for messages and calls*  
-- **Task 19.1:** Integrate push notifications  
-- **Task 19.2:** Customize alerts for messages and calls  
-- **Task 19.3:** Test notifications on multiple devices  
+**Rétrospective :**  
+- **Points Positifs :** L’implémentation des suggestions d’IA a été fluide.  
+- **Amélioration :** Mieux anticiper les besoins de test pour la messagerie éphémère.
 
 ---
 
-## **Epic 6: Calls and Call History**  
-### **UC-20:** *Make and receive voice calls*  
-- **Task 20.1:** Integrate voice calling API  
-- **Task 20.2:** Build call interface  
-- **Task 20.3:** Test call quality  
+### **Sprint 3 : Historique des Discussions, Sondages et Cartes d’Activité**
 
-### **UC-21:** *Make and receive video calls*  
-- **Task 21.1:** Integrate video calling API  
-- **Task 21.2:** Design video call interface  
+- **User Stories :**  
+  - **US07** : Historique complet des discussions et statistiques  
+  - **US08** : Sondages interactifs pour les discussions de groupe  
+  - **US09** : Cartes d’activité interactives  
+
+#### **Tâches Techniques :**
+- **US07** :  
+  - Stockage de l’historique des discussions dans Firestore (2 jours)  
+  - Création d’un tableau de bord statistique simple (2 jours)  
+
+- **US08** :  
+  - Création du modèle de sondage dans Firestore (2 jours)  
+  - UI/UX pour les sondages de groupe (2 jours)  
+
+- **US09** :  
+  - Implémentation des cartes d’activité avec actions partagées (3 jours)  
+  - Tests d’interface utilisateur (1 jour)  
+
+**Sprint Review :**  
+Les utilisateurs peuvent consulter l’historique des discussions, participer à des sondages, et partager des cartes d’activité dans les groupes.
+
+**Rétrospective :**  
+- **Points Positifs :** Bonne gestion du backlog et respect des délais.  
+- **Amélioration :** Améliorer la gestion des feedbacks utilisateurs après les tests.
 
 ---
 
-## **Epic 7: Privacy and Security**  
-### **UC-25:** *End-to-end encryption for messages and calls*  
-- **Task 25.1:** Implement encryption library  
-- **Task 25.2:** Test encrypted communication  
+## **Résumé des Sprints et Avancement**
 
----
-
-## **Epic 8: Application Customization**  
-### **UC-27:** *Switch between light and dark themes*  
-- **Task 27.1:** Implement theme toggling  
-- **Task 27.2:** Apply theme across all screens  
-
-### **UC-31:** *Change application language*  
-- **Task 31.1:** Implement language selection screen  
-- **Task 31.2:** Apply translations dynamically  
-
----
-
-## **Epic 9: Device and Session Management**  
-### **UC-29:** *Logout remotely from all devices*  
-- **Task 29.1:** Build "Manage Devices" screen  
-- **Task 29.2:** Implement remote logout  
+| **Sprint** | **User Stories Couvertes** | **Statut** |
+|------------|----------------------------|------------|
+| Sprint 1   | US01, US02, US03           | Terminé    |
+| Sprint 2   | US05, US06                 | Terminé    |
+| Sprint 3   | US07, US08, US09           | En Cours   |
