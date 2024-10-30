@@ -1,111 +1,104 @@
-## **Product Backlog : Clone WhatsApp avec Fonctionnalités Avancées**
 
-| **USID** | **User Story** | **Estimation (heures)** | **Priorité** | **Définition of Done (DoD)** |
-|----------|----------------|-------------------------|--------------|-----------------------------|
-| **US01** | En tant qu’utilisateur, je veux pouvoir m’inscrire et me connecter avec mon numéro de téléphone afin d’accéder à l’application. | 30h | Must | Connexion réussie via code OTP SMS, sans erreurs. |
-| **US02** | En tant qu’utilisateur, je veux gérer mon profil avec photo et statut pour personnaliser mon compte. | 20h | Should | L’utilisateur peut modifier le nom, le statut et la photo via l’interface. |
-| **US03** | En tant qu’utilisateur, je veux envoyer et recevoir des messages texte, audio et vidéo pour communiquer avec mes contacts. | 40h | Must | Envoi et réception de texte, audio et vidéo fonctionnels. |
-| **US04** | En tant qu’utilisateur, je veux que mes messages vocaux soient automatiquement transcrits en texte afin de les lire rapidement. | 60h | Could | Les messages vocaux sont transcrits avec au moins 80 % de précision. |
-| **US05** | En tant qu’utilisateur, je veux envoyer des messages éphémères pour que ceux-ci disparaissent après un certain délai. | 50h | Must | Les messages sont automatiquement supprimés après le délai choisi. |
-| **US06** | En tant qu’utilisateur, je veux recevoir des suggestions automatiques d’IA pour répondre rapidement aux messages reçus. | 70h | Could | L’IA propose au moins 3 suggestions pertinentes par message. |
-| **US07** | En tant qu’utilisateur, je veux consulter l’historique de mes discussions et voir des statistiques d’utilisation pour suivre mon activité. | 40h | Should | Accès à l’historique et affichage des statistiques de chat. |
-| **US08** | En tant qu’utilisateur de groupe, je veux créer et participer à des sondages pour engager les participants. | 30h | Should | Création et participation aux sondages sans erreurs. |
-| **US09** | En tant que membre de groupe, je veux partager des cartes d’activité afin de collaborer avec les autres participants. | 35h | Could | Les cartes d’activité sont accessibles à tous les membres du groupe. |
-| **US10** | En tant qu’utilisateur, je veux pouvoir activer un mode sombre ou clair pour personnaliser mon expérience d’utilisation. | 15h | Should | L’utilisateur peut basculer entre les modes sombre et clair. |
+## **Sprint 1 : Authentification et Messagerie Texte**  
+- **US01** : Inscription et connexion avec numéro de téléphone. (**30h**)  
+- **US03** : Envoi et réception de messages texte. (**15h**)  
 
----
+### **Total d’estimation : 45h**
 
-## **Répartition en Sprints**
+### **Sprint Review**  
+- Présentation de l’inscription via numéro de téléphone avec code OTP.  
+- Démonstration des échanges de messages texte en temps réel.  
 
-### **Sprint 1 : Authentification, Profil et Messagerie de Base**
-
-- **User Stories :**  
-  - **US01** : Inscription et connexion avec le numéro de téléphone  
-  - **US02** : Gestion de profil utilisateur avec photo et statut  
-  - **US03** : Envoi et réception de messages texte, audio et vidéo
-
-#### **Tâches Techniques :**
-- **US01** :  
-  - Intégrer Firebase Authentication (2 jours)  
-  - Configurer OTP avec Twilio API (3 jours)  
-  - Interface d’inscription et connexion (1 jour)  
-
-- **US02** :  
-  - Écran de gestion du profil (1 jour)  
-  - Mise à jour du profil dans Firestore (2 jours)  
-
-- **US03** :  
-  - Implémenter WebSocket pour messagerie instantanée (3 jours)  
-  - Ajouter l’envoi de fichiers audio et vidéo (2 jours)  
-
-**Sprint Review :**  
-Les utilisateurs peuvent s’inscrire, se connecter et utiliser la messagerie instantanée avec leur profil personnalisé.
-
-**Rétrospective :**  
-- **Points Positifs :** Bonne coordination entre les équipes front et back.  
-- **Amélioration :** Optimiser la configuration d’OTP pour réduire les erreurs.
+### **Rétrospective**  
+- A-t-on rencontré des problèmes avec les codes OTP ?  
+- Comment optimiser l’interface d’inscription pour améliorer l’expérience utilisateur ?
 
 ---
 
-### **Sprint 2 : Messagerie Éphémère et Suggestions IA**
+## **Sprint 2 : Gestion du Profil et Partage Multimédia**  
+- **US02** : Gestion du profil (photo, nom, statut). (**20h**)  
+- **US03** : Envoi et réception de messages audio et vidéo. (**25h**)  
 
-- **User Stories :**  
-  - **US05** : Messagerie éphémère avec expiration configurable  
-  - **US06** : Suggestions IA pour les réponses contextuelles
+### **Total d’estimation : 45h**
 
-#### **Tâches Techniques :**
-- **US05** :  
-  - Ajouter la gestion des délais dans Firestore (2 jours)  
-  - UI pour configurer l’expiration des messages (1 jour)  
-  - Tests d’expiration (1 jour)  
+### **Sprint Review**  
+- Démonstration de la modification du profil utilisateur.  
+- Présentation du partage de messages audio et vidéo.
 
-- **US06** :  
-  - Intégrer l’API OpenAI (3 jours)  
-  - Composant UI pour suggestions IA (2 jours)  
-  - Tests et ajustements (2 jours)  
-
-**Sprint Review :**  
-Les utilisateurs peuvent envoyer des messages éphémères et profiter de suggestions d’IA.
-
-**Rétrospective :**  
-- **Points Positifs :** Intégration rapide des API IA.  
-- **Amélioration :** Anticiper les besoins en tests plus complexes.
+### **Rétrospective**  
+- Des ajustements sont-ils nécessaires pour les formats multimédias ?  
+- Suggestions pour améliorer l’interface du profil.
 
 ---
 
-### **Sprint 3 : Historique, Sondages et Cartes d’Activité**
+## **Sprint 3 : Messagerie Éphémère et Mode Sombre/Clair**  
+- **US05** : Envoi de messages éphémères. (**50h**)  
+- **US10** : Personnalisation avec mode sombre et clair. (**15h**)  
 
-- **User Stories :**  
-  - **US07** : Historique des discussions et statistiques  
-  - **US08** : Sondages interactifs  
-  - **US09** : Cartes d’activité partagées
+### **Total d’estimation : 65h**
 
-#### **Tâches Techniques :**
-- **US07** :  
-  - Stocker l’historique dans Firestore (2 jours)  
-  - Ajouter des statistiques basiques (2 jours)  
+### **Sprint Review**  
+- Démonstration des messages éphémères avec suppression automatique.  
+- Présentation du basculement entre les modes sombre et clair.
 
-- **US08** :  
-  - Modèle de sondage dans Firestore (2 jours)  
-  - Interface pour sondages (2 jours)  
-
-- **US09** :  
-  - Implémentation des cartes d’activité (3 jours)  
-  - Tests UI (1 jour)  
-
-**Sprint Review :**  
-Les utilisateurs peuvent accéder à l’historique des conversations, participer à des sondages, et partager des cartes d’activité.
-
-**Rétrospective :**  
-- **Points Positifs :** Bonne gestion des délais et des priorités.  
-- **Amélioration :** Renforcer la communication avec les utilisateurs finaux pour obtenir plus de feedbacks.
+### **Rétrospective**  
+- Comment les utilisateurs ont-ils réagi aux messages éphémères ?  
+- Des améliorations sont-elles nécessaires pour le mode sombre/clair ?
 
 ---
 
-## **Résumé des Sprints**
+## **Sprint 4 : Transcription Audio et Suggestions IA**  
+- **US04** : Transcription audio en texte. (**60h**)  
+- **US06** : Suggestions automatiques d’IA. (**70h**)  
 
-| **Sprint** | **User Stories Couvertes** | **Statut** |
-|------------|----------------------------|------------|
-| Sprint 1   | US01, US02, US03           | Terminé    |
-| Sprint 2   | US05, US06                 | Terminé    |
-| Sprint 3   | US07, US08, US09           | En Cours   |
+### **Total d’estimation : 130h**
+
+### **Sprint Review**  
+- Démonstration de la transcription avec au moins 80 % de précision.  
+- Présentation des suggestions IA pertinentes.
+
+### **Rétrospective**  
+- Comment améliorer la précision de la transcription ?  
+- L’IA propose-t-elle des réponses adaptées au contexte ?
+
+---
+
+## **Sprint 5 : Historique et Sondages de Groupe**  
+- **US07** : Accès à l’historique des discussions et statistiques. (**40h**)  
+- **US08** : Création et participation à des sondages de groupe. (**30h**)  
+
+### **Total d’estimation : 70h**
+
+### **Sprint Review**  
+- Présentation de l’historique et des statistiques de chat.  
+- Démonstration des sondages sans erreurs.
+
+### **Rétrospective**  
+- L’accès à l’historique est-il fluide ?  
+- Comment enrichir les sondages de groupe ?
+
+---
+
+## **Sprint 6 : Collaboration avec Cartes d’Activité**  
+- **US09** : Partage de cartes d’activité dans les groupes. (**35h**)  
+
+### **Total d’estimation : 35h**
+
+### **Sprint Review**  
+- Présentation du partage des cartes d’activité entre membres de groupe.
+
+### **Rétrospective**  
+- Comment améliorer la collaboration avec les cartes d’activité ?
+
+---
+
+## **Récapitulatif des Sprints**  
+
+| **Sprint**           | **Histoires Utilisateur**                         | **Total d’Estimation** |
+|----------------------|---------------------------------------------------|------------------------|
+| Sprint 1             | US01, US03 (texte)                                | 45h                    |
+| Sprint 2             | US02, US03 (audio/vidéo)                          | 45h                    |
+| Sprint 3             | US05, US10                                        | 65h                    |
+| Sprint 4             | US04, US06                                        | 130h                   |
+| Sprint 5             | US07, US08                                        | 70h                    |
+| Sprint 6             | US09                                              | 35h                    |
