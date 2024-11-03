@@ -29,7 +29,7 @@ print("TCP Server is listening...")
 
 while True:
     # Step 4: Accept a connection
-    client_socket, client_address = server_socket.accept()
+    client_socket, (client_ip, client_port) = server_socket.accept()
     print(f"Connected to {client_address}")
     
     # Step 5: Send data to the client
@@ -87,8 +87,8 @@ print("UDP Server is ready to receive data...")
 
 while True:
     # Step 3: Receive data from the client
-    data, client_address = server_socket.recvfrom(1024)
-    print(f"Received from {client_address}: {data.decode()}")
+    data, (client_ip, client_port) = server_socket.recvfrom(1024)
+    print(f"Received from {client_ip}: {data.decode()}")
 
     # Step 4: Send a response back to the client
     server_socket.sendto(b'Hello from UDP Server!', client_address)
@@ -105,7 +105,7 @@ client_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 client_socket.sendto(b'Hello, UDP Server!', ('localhost', 12345))
 
 # Step 3: Receive response from the server
-data, server_address = client_socket.recvfrom(1024)
+data, (server_ip, server_port) = client_socket.recvfrom(1024)
 print(f"Server says: {data.decode()}")
 
 # Step 4: Close the socket
@@ -172,12 +172,13 @@ def main():
 
     while True:
         # Step 1: Accept new client connection
-        client_socket, client_address = server_socket.accept()
+        client_socket, (client_ip, client_port) = server_socket.accept()
         print(f"Connected to {client_address}")
 
         # Step 2: Create a new thread to handle the client
         client_thread = threading.Thread(target=handle_client, args=(client_socket, client_address))
         client_thread.start()
+	    
 
 if __name__ == "__main__":
     main()

@@ -166,3 +166,76 @@ if response:
 
 ### Conclusion
 Scapy’s syntax is designed to be flexible and straightforward, making it easier to work with complex network protocols. The ability to stack protocols, filter packets, and access fields makes it a powerful tool for network analysis and packet manipulation. As you gain more experience with Scapy, you’ll find its syntax quite intuitive and efficient for a variety of networking tasks.
+
+
+---
+
+
+In `scapy`, `sr`, `sr1`, and `srp` are different functions used to send and receive packets, each with its specific use case and behavior. Let’s look at each one and the differences between them.
+
+### 1. `sr`
+The `sr` function stands for **"send and receive"** and is used to send a packet and receive all responses. 
+
+- **Usage**: `sr(packet, timeout=2)`
+- **Returns**: Two lists: one for answered packets (packets that received a response) and one for unanswered packets.
+- **When to Use**: This is ideal when you want to send a packet and receive multiple replies. For example, if you’re performing a scan and expect responses from multiple devices, `sr` is useful.
+
+**Example**:
+```python
+from scapy.all import *
+
+# Sending an ICMP packet and expecting multiple responses
+answered, unanswered = sr(IP(dst="192.168.1.0/24")/ICMP())
+answered.summary()
+```
+
+In this example, `sr` sends the ICMP packet to each IP in the `192.168.1.0/24` subnet and collects any replies.
+
+### 2. `sr1`
+The `sr1` function is a **variant of `sr`** that sends a packet and waits for a **single reply**. It only returns the first response received and doesn’t handle multiple replies.
+
+- **Usage**: `sr1(packet, timeout=2)`
+- **Returns**: The first response packet received.
+- **When to Use**: This is best used when you expect a single reply, such as checking the response from a specific server or device.
+
+**Example**:
+```python
+from scapy.all import *
+
+# Sending a single ICMP packet and getting only the first reply
+response = sr1(IP(dst="192.168.1.1")/ICMP())
+response.show()
+```
+
+In this case, `sr1` waits for the first ICMP reply from `192.168.1.1` and returns it. If no response is received, it will return `None` after the timeout.
+
+### 3. `srp`
+The `srp` function stands for **"send and receive at layer 2 (data link layer)"** and is used for packets that require a Layer 2 address (such as MAC addresses). This is particularly useful for protocols like **ARP** that operate at Layer 2.
+
+- **Usage**: `srp(packet, timeout=2)`
+- **Returns**: Two lists—one for answered and one for unanswered packets.
+- **When to Use**: Use `srp` when working with protocols at Layer 2 or when you need to send Ethernet frames directly, like in ARP spoofing or LAN scanning.
+
+**Example**:
+```python
+from scapy.all import *
+
+# Sending an ARP request to each device on a network and getting responses
+packet = Ether(dst="ff:ff:ff:ff:ff:ff")/ARP(pdst="192.168.1.0/24")
+answered, unanswered = srp(packet, timeout=2)
+answered.summary()
+```
+
+In this example, `srp` is used to send an ARP broadcast (`ff:ff:ff:ff:ff:ff`) to discover devices on the `192.168.1.0/24` subnet. The function operates at the data link layer (Ethernet) and collects replies from devices that respond to the ARP request.
+
+---
+
+### Summary of Differences
+
+| Function | Layer       | Expected Replies                        | Use Case                          |
+|----------|-------------|-----------------------------------------|-----------------------------------|
+| `sr`     | Layer 3+    | Multiple replies                       | IP-level communication, multi-response scans |
+| `sr1`    | Layer 3+    | Single reply                           | Expecting a single reply          |
+| `srp`    | Layer 2     | Multiple replies at the data link layer | MAC-level communication (e.g., ARP) |
+
+Each function serves a slightly different purpose, with `sr` and `sr1` operating above the IP layer and `srp` working directly with Ethernet frames.
