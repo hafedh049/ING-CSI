@@ -1,9 +1,3 @@
-![[Pasted image 20240930144625.jpg]]
-
-https://www.tutorialspoint.com/assembly_programming/assembly_memory_management.htm
-
-Assembly language is a low-level programming language that provides a direct representation of machine code. It is specific to the architecture of the computer's processor and provides a way for programmers to write instructions that the CPU can execute directly. Here's a detailed explanation of how assembly works:
-
 ### 1. **Assembly Language Basics**
    - **Low-Level Nature**: Assembly language is closely tied to the hardware. Unlike high-level languages that use complex syntaxes and abstractions, assembly uses mnemonics to represent machine instructions. Each mnemonic corresponds to an operation that the CPU can perform, such as arithmetic calculations, memory access, or control flow.
    - **Processor-Specific**: Assembly languages are unique to each type of processor. For example, x86 and ARM processors have their own distinct assembly instructions. This means code written in assembly for one type of CPU won't work on another without modifications.
@@ -51,35 +45,5 @@ Assembly language is a low-level programming language that provides a direct rep
    - **Challenges**:
      - **Complexity**: Writing in assembly is more complex and time-consuming compared to high-level languages.
      - **Portability**: Assembly is not portable across different processor architectures, making code reuse difficult.
-
-### 9. **Example: Simple Addition**
-Below is an example of an assembly program that adds two numbers and stores the result:
-
-```asm
-section .data
-    num1 db 10    ; Define byte, value 10
-    num2 db 20    ; Define byte, value 20
-    result db 0   ; Reserve space for result
-
-section .text
-    global _start
-
-_start:
-    mov al, [num1] ; Move value of num1 into AL register
-    add al, [num2] ; Add value of num2 to AL register
-    mov [result], al ; Store the result in 'result'
-
-    ; Exit program (Linux syscall)
-    mov eax, 1      ; syscall number for sys_exit
-    xor ebx, ebx    ; return 0 status
-    int 0x80        ; interrupt to make the syscall
-```
-
-In this example:
-- **`mov al, [num1]`** moves the value of `num1` into the `AL` register.
-- **`add al, [num2]`** adds the value of `num2` to `AL`.
-- The result is stored in the `result` variable.
-- Finally, a system call is made to exit the program.
-
 ### Summary
 Assembly language gives you direct control over a computer's hardware, allowing efficient and precise manipulation of registers and memory. While it offers significant power, the learning curve is steep compared to high-level languages, and the code is highly specific to the CPU architecture it targets. It is mainly used today for performance-critical parts of software, embedded systems, and for situations requiring precise control of hardware.

@@ -35,7 +35,7 @@ The given text explains the usage of several common assembly language instructio
      - Result: `0110`
    - Code Example:
      ```c
-     XOR EAX, EAX    ; Clear the EAX register
+     XOR AX, AX    ; Clear the AX register
      ```
 
 4. **TEST Instruction**:
