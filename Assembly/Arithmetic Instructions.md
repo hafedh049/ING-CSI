@@ -15,6 +15,7 @@ The operand `destination` can be an 8-bit, 16-bit, or 32-bit value.
 **Examples**:
 ```c
 INC EBX     ; Increments 32-bit register
+INC AX     ; Increments 16-bit register
 INC DL      ; Increments 8-bit register
 INC [count] ; Increments the count variable
 ```

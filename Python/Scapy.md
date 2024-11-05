@@ -239,3 +239,105 @@ In this example, `srp` is used to send an ARP broadcast (`ff:ff:ff:ff:ff:ff`) to
 | `srp`    | Layer 2     | Multiple replies at the data link layer | MAC-level communication (e.g., ARP) |
 
 Each function serves a slightly different purpose, with `sr` and `sr1` operating above the IP layer and `srp` working directly with Ethernet frames.
+
+---
+
+Here are examples for each protocol type using Scapy's `sr()` function in Python.
+
+### ICMP (Ping) Example
+This example sends an ICMP echo request to a specified IP address, similar to a `ping`.
+
+```python
+from scapy.all import *
+
+# Sending ICMP Echo Request (Ping)
+icmp_packet = IP(dst="8.8.8.8") / ICMP()
+icmp_response, unanswered = sr(icmp_packet, timeout=1)
+
+print("ICMP Response:")
+for sent, received in icmp_response:
+    print(f"Sent: {sent.summary()}")
+    print(f"Received: {received.summary()}")
+```
+
+### Output Explanation
+- **Sent**: Shows the ICMP request packet.
+- **Received**: Shows the ICMP reply packet if the target responded.
+
+---
+
+### ARP (Address Resolution Protocol) Example
+This example sends an ARP request to get the MAC address of a device on the local network.
+
+```python
+from scapy.all import *
+
+# Sending ARP Request
+arp_packet = ARP(pdst="192.168.1.1")
+arp_response, unanswered = sr(arp_packet, timeout=1)
+
+print("ARP Response:")
+for sent, received in arp_response:
+    print(f"Sent: {sent.summary()}")
+    print(f"Received: {received.summary()}")
+    print(f"MAC Address of {received.psrc}: {received.hwsrc}")
+```
+
+### Output Explanation
+- **Sent**: Shows the ARP request packet.
+- **Received**: Shows the ARP reply packet with the MAC address of the IP specified.
+
+---
+
+### TCP (Transmission Control Protocol) Example
+This example sends a TCP SYN packet to a specified IP and port. The response will indicate if the port is open (SYN-ACK) or closed (RST).
+
+```python
+from scapy.all import *
+
+# Sending TCP SYN Packet
+tcp_packet = IP(dst="scanme.nmap.org") / TCP(dport=80, flags="S")
+tcp_response, unanswered = sr(tcp_packet, timeout=1)
+
+print("TCP Response:")
+for sent, received in tcp_response:
+    print(f"Sent: {sent.summary()}")
+    if received.haslayer(TCP):
+        if received[TCP].flags == "SA":  # SYN-ACK
+            print(f"Received: Port {received[TCP].sport} is open.")
+        elif received[TCP].flags == "RA":  # RST-ACK
+            print(f"Received: Port {received[TCP].sport} is closed.")
+```
+
+### Output Explanation
+- **Sent**: Shows the TCP SYN packet sent to initiate a connection.
+- **Received**: If the port is open, it returns a SYN-ACK packet (indicating open); if closed, it returns an RST-ACK.
+
+---
+
+### UDP (User Datagram Protocol) Example
+This example sends a UDP packet. Since UDP doesn’t have a handshake like TCP, it often does not return a response unless the port is closed, in which case it might send an ICMP "Port Unreachable" message.
+
+```python
+from scapy.all import *
+
+# Sending UDP Packet
+udp_packet = IP(dst="8.8.8.8") / UDP(dport=53)
+udp_response, unanswered = sr(udp_packet, timeout=1)
+
+print("UDP Response:")
+for sent, received in udp_response:
+    print(f"Sent: {sent.summary()}")
+    if received.haslayer(ICMP):
+        print("Received: ICMP Port Unreachable (Port is closed)")
+    else:
+        print("Received a response, likely meaning the port is open.")
+```
+
+### Output Explanation
+- **Sent**: Shows the UDP packet sent to the specified destination.
+- **Received**: If the target port is closed, it may respond with an ICMP Port Unreachable message.
+
+---
+
+Each of these examples uses `sr()` to send a packet and receive responses, showing different behaviors depending on the protocol. Each response type gives specific insights based on the expected behavior of the protocol used.
