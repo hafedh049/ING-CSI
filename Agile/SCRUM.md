@@ -26,13 +26,13 @@ A **Scrum team** is cross-functional and self-organizing. It consists of:
 
 ### 2.2. **Scrum Events (Ceremonies)**
 
-| **Event**                | **Purpose**                                               | **Duration**                |
-|--------------------------|-----------------------------------------------------------|-----------------------------|
-| **Sprint**               | A time-boxed iteration to deliver an increment.            | **1-4 weeks**               |
+| **Event**                | **Purpose**                                                    | **Duration**                    |
+| ------------------------ | -------------------------------------------------------------- | ------------------------------- |
+| **Sprint**               | A time-boxed iteration to deliver an increment.                | **1-4 weeks**                   |
 | **Sprint Planning**      | Defines the goal, backlog items, and work plan for the Sprint. | **8 hours (for 4-week sprint)** |
-| **Daily Scrum**          | 15-minute standup meeting to sync team activities.         | **15 minutes** per day      |
-| **Sprint Review**        | Demonstrates the increment to stakeholders for feedback.   | **4 hours (for 4-week sprint)** |
-| **Sprint Retrospective** | Reflects on the process and identifies improvement areas.  | **3 hours (for 4-week sprint)** |
+| **Daily Scrum**          | 15-minute standup meeting to sync team activities.             | **15 minutes** per day          |
+| **Sprint Review**        | Demonstrates the increment to stakeholders for feedback.       | **4 hours (for 4-week sprint)** |
+| **Sprint Retrospective** | Reflects on the process and identifies improvement areas.      | **3 hours (for 4-week sprint)** |
 
 ---
 
