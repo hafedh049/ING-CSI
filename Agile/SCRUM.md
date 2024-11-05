@@ -1,4 +1,3 @@
-
 ## **1. Overview of Scrum**
 Scrum is an **agile framework** used to develop, deliver, and maintain products iteratively and incrementally. It focuses on collaboration, adaptability, and continuous feedback. Scrum divides complex tasks into manageable increments to deliver value faster and more efficiently.
 
