@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Agile/SCRUM.md",
+                "file": "NetSec/DHCP Starvation.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "SCRUM"
+              "title": "DHCP Starvation"
             }
           }
         ]
@@ -164,9 +164,17 @@
   },
   "active": "105a4d2e344543bb",
   "lastOpenFiles": [
+    "Windows/AD.md",
+    "NetSec/DHCP Starvation.md",
+    "AWS/LB.md",
+    "Windows",
+    "AWS/ASG.md",
+    "Droit d'Entreprise/Droit d'Entreprise.md",
+    "Lamp.md",
+    "Agile/SCRUM.md",
+    "Droit d'Entreprise",
     "Agile/UP.md",
     "Agile/Traditional Way.md",
-    "Agile/SCRUM.md",
     "Agile/Projet.md",
     "Assembly/Registers.md",
     "Assembly/Numbers.md",
@@ -184,13 +192,6 @@
     "Python/DNS Spoofing.md",
     "Python/Scapy.md",
     "Python/Balayage ICMP.md",
-    "Python/Balayage PING.md",
-    "Python/Payload.md",
-    "Python/Port Scanner.md",
-    "Python/TCP SYN.md",
-    "Python/SYN Flooding.md",
-    "Python/Traceroute.md",
-    "Untitled",
     "SecPy",
     "Python",
     "New folder",
@@ -198,7 +199,6 @@
     "Agile/Jira",
     "Agile",
     "Cryptography/Classic Algorithms",
-    "Cryptography",
-    "BlockChain"
+    "Cryptography"
   ]
 }
