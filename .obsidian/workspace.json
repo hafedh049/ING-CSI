@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "NetSec/DHCP Starvation.md",
+                "file": "NetSec/DHCP Spoofing.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "DHCP Starvation"
+              "title": "DHCP Spoofing"
             }
           }
         ]
@@ -164,8 +164,9 @@
   },
   "active": "105a4d2e344543bb",
   "lastOpenFiles": [
-    "Windows/AD.md",
     "NetSec/DHCP Starvation.md",
+    "NetSec/DHCP Spoofing.md",
+    "Windows/AD.md",
     "AWS/LB.md",
     "Windows",
     "AWS/ASG.md",
@@ -191,7 +192,6 @@
     "Python/ARP Scan.md",
     "Python/DNS Spoofing.md",
     "Python/Scapy.md",
-    "Python/Balayage ICMP.md",
     "SecPy",
     "Python",
     "New folder",
