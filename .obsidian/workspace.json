@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Ansible/Vaults.md",
-                "mode": "preview",
+                "file": "Ansible/Modules.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Vaults"
+              "title": "Modules"
             }
           }
         ]
@@ -162,29 +162,29 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c6150e859d2279be",
+  "active": "8230d98ef3568afa",
   "lastOpenFiles": [
-    "Ansible/Vars & Vars Files.md",
     "Ansible/Playbook Form.md",
-    "Ansible/Modules.md",
-    "Ansible/Handlers.md",
     "Ansible/Hall Of Fame.md",
     "Ansible/Facts.md",
     "Ansible/Ansible.cfg & Inventory.md",
     "Ansible/Ansible.md",
     "Ansible/AD-HOC.md",
     "Ansible/Vaults.md",
-    "Pasted image 20250119003340.png",
+    "Ansible/Vars & Vars Files.md",
+    "Ansible/Modules.md",
+    "Ansible/Handlers.md",
+    "IMAGES/Pasted image 20250119003340.png",
     "NetSec/PAT.md",
-    "Pasted image 20250118165225.png",
-    "Pasted image 20250118165032.png",
-    "Pasted image 20250118164955.png",
-    "Pasted image 20250118155911.png",
-    "Pasted image 20250118155810.png",
-    "Pasted image 20250118155747.png",
-    "Pasted image 20250118155640.png",
-    "Pasted image 20250118155546.png",
-    "Pasted image 20250118155320.png",
+    "IMAGES/Pasted image 20250118165225.png",
+    "IMAGES/Pasted image 20250118165032.png",
+    "IMAGES/Pasted image 20250118164955.png",
+    "IMAGES/Pasted image 20250118155911.png",
+    "IMAGES/Pasted image 20250118155810.png",
+    "IMAGES/Pasted image 20250118155747.png",
+    "IMAGES/Pasted image 20250118155640.png",
+    "IMAGES/Pasted image 20250118155546.png",
+    "IMAGES/Pasted image 20250118155320.png",
     "NetSec/ACL.md",
     "AWS/Bastion Host.md",
     "AWS/VPC.md",

@@ -4,11 +4,10 @@
 
 **Attributes**:
 
-| Attribute   | Description                                       |
-| ----------- | ------------------------------------------------- |
-| `msg`       | The message to display.                           |
-| `var`       | Displays the value of a variable.                 |
-| `verbosity` | Limits the message to a specific verbosity level. |
+| Attribute | Description                       |
+| --------- | --------------------------------- |
+| `msg`     | The message to display.           |
+| `var`     | Displays the value of a variable. |
 
 **Example**:
 
@@ -30,12 +29,9 @@
 
 **Attributes**:
 
-|Attribute|Description|
-|---|---|
-|`cmd`|The command to execute (default).|
-|`chdir`|Change to this directory before running.|
-|`creates`|Only run if the file does not exist.|
-|`removes`|Only run if the file exists.|
+| Attribute | Description                              |
+| --------- | ---------------------------------------- |
+| `cmd`     | The command to execute (default).        |
 
 **Example**:
 
@@ -58,12 +54,11 @@
 
 **Attributes**:
 
-|Attribute|Description|
-|---|---|
-|`path`|The file to modify.|
-|`regexp`|The regular expression to search for.|
-|`replace`|The replacement string.|
-|`backup`|Creates a backup of the file before editing.|
+| Attribute | Description                                  |
+| --------- | -------------------------------------------- |
+| `path`    | The file to modify.                          |
+| `regexp`  | The regular expression to search for.        |
+| `replace` | The replacement string.                      |
 
 **Example**:
 
@@ -84,14 +79,14 @@
 
 **Attributes**:
 
-|Attribute|Description|
-|---|---|
-|`path`|The file to modify.|
-|`line`|The line to insert or ensure exists.|
-|`regexp`|Searches for an existing line to replace.|
-|`state`|If `absent`, removes matching lines.|
-|`insertafter`|Adds the line after a matching regex or at EOF.|
-|`insertbefore`|Adds the line before a matching regex or at BOF.|
+| Attribute      | Description                                      |
+| -------------- | ------------------------------------------------ |
+| `path`         | The file to modify.                              |
+| `line`         | The line to insert or ensure exists.             |
+| `regexp`       | Searches for an existing line to replace.        |
+| `state`        | If `absent`, removes matching lines.             |
+| `insertafter`  | Adds the line after a matching regex or at EOF.  |
+| `insertbefore` | Adds the line before a matching regex or at BOF. |
 
 **Example**:
 
@@ -126,11 +121,9 @@
 
 **Attributes**:
 
-|Attribute|Description|
-|---|---|
-|`filter`|Collects specific facts.|
-|`gather_subset`|Limits facts to a specific subset (e.g., `min`).|
-|`gather_timeout`|Time in seconds to wait for fact gathering.|
+| Attribute       | Description                                      |
+| --------------- | ------------------------------------------------ |
+| `filter`        | Collects specific facts.                         |
 
 **Example**:
 
@@ -148,11 +141,10 @@
 
 **Attributes**:
 
-|Attribute|Description|
-|---|---|
-|`name`|The package to manage (can be a list).|
-|`state`|Desired state: `present`, `absent`, or `latest`.|
-|`allow_downgrade`|Whether downgrades are allowed.|
+| Attribute         | Description                                      |
+| ----------------- | ------------------------------------------------ |
+| `name`            | The package to manage (can be a list).           |
+| `state`           | Desired state: `present`, `absent`, or `latest`. |
 
 **Example (DNF)**:
 
@@ -247,17 +239,16 @@
 
 ---
 
-### 11. **`firewalld`**
+### 11. **`ansible.posix.firewalld`**
 
 - **Purpose**: Manages firewall rules.
 
 **Attributes**:
 
-|Attribute|Description|
-|---|---|
-|`service`|The service to allow/deny.|
-|`state`|Desired state: `enabled` or `disabled`.|
-|`zone`|The firewall zone to apply the rule.|
+| Attribute | Description                             |
+| --------- | --------------------------------------- |
+| `service` | The service to allow/deny.              |
+| `state`   | Desired state: `enabled` or `disabled`. |
 
 **Example**:
 
@@ -277,13 +268,13 @@
 
 **Attributes**:
 
-|Attribute|Description|
-|---|---|
-|`src`|Source file path.|
-|`dest`|Destination file path.|
-|`owner`|Owner of the file.|
-|`group`|Group of the file.|
-|`mode`|Permissions for the file.|
+| Attribute | Description               |
+| --------- | ------------------------- |
+| `src`     | Source file path.         |
+| `dest`    | Destination file path.    |
+| `owner`   | Owner of the file.        |
+| `group`   | Group of the file.        |
+| `mode`    | Permissions for the file. |
 
 **Example**:
 
@@ -341,17 +332,9 @@
 
 **Attributes**:
 
-|Attribute|Description|
-|---|---|
-|`url`|The URL to interact with.|
-|`method`|The HTTP method to use (e.g., `GET`, `POST`, `PUT`, `DELETE`).|
-|`headers`|HTTP headers to include in the request (as a dictionary).|
-|`body`|The body content for the request (for `POST`, `PUT`, etc.).|
-|`body_format`|Specifies the body format (`raw`, `json`, `form-urlencoded`).|
-|`status_code`|Expected HTTP status codes (e.g., `[200, 201]`).|
-|`return_content`|If `yes`, returns the body of the response.|
-|`timeout`|Time (in seconds) before the request times out.|
-|`validate_certs`|If `no`, ignores SSL certificate validation (useful for self-signed certificates).|
+| Attribute | Description                                                    |
+| --------- | -------------------------------------------------------------- |
+| `url`     | The URL to interact with.                                      |
 
 **Example**:
 
@@ -359,17 +342,4 @@
 - name: Perform a GET request to fetch data from an API
   ansible.builtin.uri:
     url: "https://api.example.com/data"
-    method: GET
-    return_content: yes
-
-- name: Send a POST request with JSON data
-  ansible.builtin.uri:
-    url: "https://api.example.com/create"
-    method: POST
-    headers:
-      Content-Type: "application/json"
-    body: '{"name": "John", "age": 30}'
-    body_format: json
-    status_code: [200, 201]
-    validate_certs: yes
 ```
