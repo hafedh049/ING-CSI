@@ -1,4 +1,3 @@
-
 ### **Access Control List (ACL)**
 
 An **Access Control List (ACL)** is a set of rules applied to a router or switch interface that controls the traffic flow in a network. It filters network traffic by permitting or denying packets based on criteria such as source/destination IP address, protocol type, port number, etc.
@@ -11,11 +10,11 @@ There are two primary types of ACLs:
 #### 1. **Standard ACL**
    - Filters traffic based only on the **source IP address**.
    - It is less granular and typically used closer to the destination.
-   - Number range: **1–99** (numbered) or named ACLs.
+   - Number range: **1–99** **&** **1300-1999** (numbered) or named ACLs.
 
    **Commands**:
    ```css
-   access-list <number> {permit|deny} <source> [wildcard-mask]
+   access-list <number> {permit|deny} [host] <source> [wildcard-mask]
    ```
    Example:
    ```css
@@ -31,7 +30,7 @@ There are two primary types of ACLs:
 
 #### 2. **Extended ACL**
    - Filters traffic based on **source and destination IP addresses**, **protocols**, and **ports**.
-   - Number range: **100–199** (numbered) or named ACLs.
+   - Number range: **100–199** **&** **2000-2699** (numbered) or named ACLs.
    - Typically applied closer to the source.
 
    **Commands**:

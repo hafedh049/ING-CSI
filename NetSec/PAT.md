@@ -1,198 +1,129 @@
-### **Port Address Translation (PAT)**
-
-#### **What is PAT?**
-**Port Address Translation (PAT)**, also known as **NAT Overload**, is a method of Network Address Translation (NAT) that allows multiple devices in a private network to share a single public IP address. PAT achieves this by mapping multiple private IP addresses to a single public IP address while differentiating traffic using port numbers.
+Here are the syntax and examples for configuring **Static NAT**, **Dynamic NAT**, and **PAT (Port Address Translation)** in GNS3. These configurations are typically done on Cisco routers.
 
 ---
 
-### **Key Features of PAT**
-1. **Efficient Address Usage**: PAT allows thousands of devices to access the internet using one public IP address.
-2. **Port Mapping**: PAT uses source port numbers to track individual connections.
-3. **Dynamic Translation**: Automatically assigns public IP and ports as needed.
+### **1. Static NAT**
 
----
+Static NAT maps a private IP address to a specific public IP address, one-to-one. This is often used for servers or devices that need to be accessible from the internet.
 
-### **Types of NAT**
-- **Static NAT**: Maps one private IP to one public IP.
-- **Dynamic NAT**: Maps a pool of private IPs to a pool of public IPs.
-- **PAT (Dynamic NAT with Overload)**: Maps multiple private IPs to a single public IP using port numbers.
+**Syntax**:
 
----
-
-### **PAT Configuration on a Cisco Router**
-
-#### **Step 1: Configure the Inside and Outside Interfaces**
-1. Define the inside and outside interfaces:
-   ```c
-   interface <inside-interface>
-   ip address <ip-address> <subnet-mask>
-   ip nat inside
-   no shutdown
-
-   interface <outside-interface>
-   ip address <ip-address> <subnet-mask>
-   ip nat outside
-   no shutdown
-   ```
-
-2. Example:
-   ```c
-   interface g0/0
-   ip address 192.168.1.1 255.255.255.0
-   ip nat inside
-   no shutdown
-
-   interface g0/1
-   ip address 203.0.113.1 255.255.255.0
-   ip nat outside
-   no shutdown
-   ```
-
----
-
-#### **Step 2: Define the Access Control List (ACL)**
-Create an ACL to identify the private IP addresses that need to be translated:
-```c
-access-list <number> permit <source-ip> <wildcard-mask>
+```css
+Router(config)# ip nat inside source static <private-ip> <public-ip>
+Router(config)# interface <inside-interface>
+Router(config-if)# ip nat inside
+Router(config)# interface <outside-interface>
+Router(config-if)# ip nat outside
 ```
 
-Example:
-```c
-access-list 1 permit 192.168.1.0 0.0.0.255
+**Example**:
+
+- Private IP: `192.168.1.10`
+- Public IP: `203.0.113.10`
+
+```css
+Router(config)# ip nat inside source static 192.168.1.10 203.0.113.10
+Router(config)# interface FastEthernet0/0
+Router(config-if)# ip address 192.168.1.1 255.255.255.0
+Router(config-if)# ip nat inside
+Router(config)# interface FastEthernet0/1
+Router(config-if)# ip address 203.0.113.1 255.255.255.0
+Router(config-if)# ip nat outside
 ```
 
 ---
 
-#### **Step 3: Configure PAT**
-Enable PAT by linking the ACL to the outside interface and enabling overload:
-```c
-ip nat inside source list <acl-number> interface <outside-interface> overload
+### **2. Dynamic NAT**
+
+Dynamic NAT maps a pool of private IP addresses to a pool of public IP addresses. This is useful when you have more private IPs than public IPs but don’t need all private IPs translated simultaneously.
+
+**Syntax**:
+
+```css
+Router(config)# ip nat pool <pool-name> <start-public-ip> <end-public-ip> netmask <subnet-mask>
+Router(config)# access-list <acl-number> permit <source-network> <wildcard-mask>
+Router(config)# ip nat inside source list <acl-number> pool <pool-name>
+Router(config)# interface <inside-interface>
+Router(config-if)# ip nat inside
+Router(config)# interface <outside-interface>
+Router(config-if)# ip nat outside
 ```
 
-Example:
-```c
-ip nat inside source list 1 interface g0/1 overload
+**Example**:
+
+- Public IP Pool: `203.0.113.10` - `203.0.113.20`
+- Private Network: `192.168.1.0/24`
+
+```css
+Router(config)# ip nat pool NAT_POOL 203.0.113.10 203.0.113.20 netmask 255.255.255.0
+Router(config)# access-list 1 permit 192.168.1.0 0.0.0.255
+Router(config)# ip nat inside source list 1 pool NAT_POOL
+Router(config)# interface FastEthernet0/0
+Router(config-if)# ip address 192.168.1.1 255.255.255.0
+Router(config-if)# ip nat inside
+Router(config)# interface FastEthernet0/1
+Router(config-if)# ip address 203.0.113.1 255.255.255.0
+Router(config-if)# ip nat outside
 ```
 
 ---
 
-#### **Step 4: Save and Verify the Configuration**
-1. Save the configuration:
-   ```c
-   write memory
-   ```
+### **3. PAT (Port Address Translation)**
 
-2. Verify NAT translations:
-   ```c
-   show ip nat translations
-   ```
+PAT maps multiple private IP addresses to a single public IP address using unique ports. This is commonly used when there is a shortage of public IP addresses.
 
-3. Verify NAT statistics:
-   ```c
-   show ip nat statistics
-   ```
+**Syntax**:
 
----
+```css
+Router(config)# ip nat inside source list <acl-number> interface <outside-interface> overload
+Router(config)# access-list <acl-number> permit <source-network> <wildcard-mask>
+Router(config)# interface <inside-interface>
+Router(config-if)# ip nat inside
+Router(config)# interface <outside-interface>
+Router(config-if)# ip nat outside
+```
 
-### **How to Configure PAT in GNS3**
+**Example**:
 
-#### **1. Setup the Topology**
-1. Add a router, a switch, and multiple PCs.
-2. Connect the PCs to the router via the switch.
-3. Connect the router's outside interface to the internet or a simulated public network.
+- Single Public IP: `203.0.113.10`
+- Private Network: `192.168.1.0/24`
 
-#### **2. Configure the Router**
-1. Configure the inside and outside interfaces:
-   ```c
-   interface g0/0
-   ip address 192.168.1.1 255.255.255.0
-   ip nat inside
-   no shutdown
-
-   interface g0/1
-   ip address 203.0.113.1 255.255.255.0
-   ip nat outside
-   no shutdown
-   ```
-
-2. Create an ACL to define the private network:
-   ```c
-   access-list 1 permit 192.168.1.0 0.0.0.255
-   ```
-
-3. Configure PAT:
-   ```c
-   ip nat inside source list 1 interface g0/1 overload
-   ```
-
----
-
-#### **3. Configure the PCs**
-1. Assign IP addresses to the PCs in the private range (e.g., 192.168.1.2, 192.168.1.3, etc.).
-2. Set the default gateway of the PCs to the router's inside interface (192.168.1.1).
-
----
-
-#### **4. Test the Configuration**
-1. Test connectivity from the PCs to an external device (e.g., a simulated web server with a public IP).
-2. Use the following commands to verify PAT functionality:
-   - Check NAT translations:
-     ```c
-     show ip nat translations
-     ```
-   - Check NAT statistics:
-     ```c
-     show ip nat statistics
-     ```
-
----
-
-### **Example Configuration**
-
-#### **Topology**
-- **Inside Interface (g0/0)**: 192.168.1.0/24
-- **Outside Interface (g0/1)**: 203.0.113.1/24
-- **PC1**: 192.168.1.2
-- **PC2**: 192.168.1.3
-
-#### **Commands**
-```c
-! Configure interfaces
-interface g0/0
-ip address 192.168.1.1 255.255.255.0
-ip nat inside
-no shutdown
-
-interface g0/1
-ip address 203.0.113.1 255.255.255.0
-ip nat outside
-no shutdown
-
-! Create an ACL for private IPs
-access-list 1 permit 192.168.1.0 0.0.0.255
-
-! Enable PAT
-ip nat inside source list 1 interface g0/1 overload
-
-! Verify NAT
-show ip nat translations
-show ip nat statistics
+```css
+Router(config)# access-list 1 permit 192.168.1.0 0.0.0.255
+Router(config)# ip nat inside source list 1 interface FastEthernet0/1 overload
+Router(config)# interface FastEthernet0/0
+Router(config-if)# ip address 192.168.1.1 255.255.255.0
+Router(config-if)# ip nat inside
+Router(config)# interface FastEthernet0/1
+Router(config-if)# ip address 203.0.113.10 255.255.255.0
+Router(config-if)# ip nat outside
 ```
 
 ---
 
 ### **Verification Commands**
-- View NAT translations:
-  ```c
-  show ip nat translations
-  ```
-- View NAT statistics:
-  ```c
-  show ip nat statistics
-  ```
-- Debug NAT events:
-  ```c
-  debug ip nat
-  ```
+
+1. **Check NAT Translations**:
+    
+    ```c
+    Router# show ip nat translations
+    ```
+    
+2. **Check NAT Statistics**:
+    
+    ```c
+    Router# show ip nat statistics
+    ```
+    
 
 ---
+
+### **Summary**
+
+|Type|Use Case|Example Syntax|
+|---|---|---|
+|Static NAT|One-to-one mapping (e.g., server access).|`ip nat inside source static <private> <public>`|
+|Dynamic NAT|Many-to-many mapping using a pool.|`ip nat pool <name> <start-ip> <end-ip>`|
+|PAT|Many-to-one mapping (port-based).|`ip nat inside source list <acl> interface <interface> overload`|
+
+Let me know if you need further details or help with configurations!
