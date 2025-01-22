@@ -100,20 +100,40 @@ ansible all -m ansible.builtin.user -a "name=student state=absent" -b
 
   vars:
     groups:
-      - { name: cpi, gid: 5000 }
-      - { name: tic, gid: 5001 }
-      - { name: ssir, gid: 5002 }
+      - name: cpi
+        gid: 5000
+      - name: tic
+        gid: 5001
+      - name: ssir
+        gid: 5002
 
     users:
-      - { name: user1, uid: 1200, group: cpi, shell: /bin/sh }
-      - { name: user2, uid: 1300, group: tic, shell: /bin/sh }
-      - { name: user3, uid: 1400, group: ssir, shell: /bin/sh }
+      - name: user1
+        uid: 1200
+        group: cpi
+        shell: /bin/sh
+      - name: user2
+        uid: 1300
+        group: tic
+        shell: /bin/sh
+      - name: user3
+        uid: 1400
+        group: ssir
+        shell: /bin/sh
 
     cron_jobs:
-      - { name: "Write 'hello' to test.txt every 15th of the month, every Friday at 12:14",
-          minute: "14", hour: "12", day: "15", weekday: "5", job: "echo hello > /path/to/test.txt" }
-      - { name: "Clean /tmp on July 2nd at 9am",
-          minute: "0", hour: "9", day: "2", month: "7", job: "rm -rf /tmp/*" }
+      - name: "Write 'hello' to test.txt every 15th of the month, every Friday at 12:14"
+        minute: "14"
+        hour: "12"
+        day: "15"
+        weekday: "5"
+        job: "echo hello > /path/to/test.txt"
+      - name: "Clean /tmp on July 2nd at 9am"
+        minute: "0"
+        hour: "9"
+        day: "2"
+        month: "7"
+        job: "rm -rf /tmp/*"
 
   tasks:
     - name: Create groups
@@ -131,7 +151,7 @@ ansible all -m ansible.builtin.user -a "name=student state=absent" -b
       loop: "{{ users }}"
 
     - name: Schedule cron jobs
-      ansible.builtin.cron:
+      cron:
         name: "{{ item.name }}"
         minute: "{{ item.minute }}"
         hour: "{{ item.hour }}"
@@ -140,5 +160,5 @@ ansible all -m ansible.builtin.user -a "name=student state=absent" -b
         weekday: "{{ item.weekday | default('*') }}"
         job: "{{ item.job }}"
       loop: "{{ cron_jobs }}"
-```
 
+```
