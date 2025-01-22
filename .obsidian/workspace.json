@@ -13,12 +13,20 @@
             "state": {
               "type": "markdown",
               "state": {
+<<<<<<< HEAD
                 "file": "AWS/SSO.md",
+=======
+                "file": "Ansible/Modules.md",
+>>>>>>> f49f1614c23fafd8ee15877708a93f92809fabb1
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
+<<<<<<< HEAD
               "title": "SSO"
+=======
+              "title": "Modules"
+>>>>>>> f49f1614c23fafd8ee15877708a93f92809fabb1
             }
           }
         ]
@@ -162,8 +170,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c6150e859d2279be",
+  "active": "8230d98ef3568afa",
   "lastOpenFiles": [
+<<<<<<< HEAD
     "AWS/AWS Organizations.md",
     "AWS/SSO.md",
     "IMAGES/AWS_OU.webp",
@@ -174,6 +183,39 @@
     "IMAGES/f0a1bb2c-a1bc-40ce-abde-6fb9d2a66ce8_1600x570.webp",
     "AWS/Serverless.md",
     "AWS/RDS.md",
+=======
+    "Ansible/Playbook Form.md",
+    "Ansible/Hall Of Fame.md",
+    "Ansible/Facts.md",
+    "Ansible/Ansible.cfg & Inventory.md",
+    "Ansible/Ansible.md",
+    "Ansible/AD-HOC.md",
+    "Ansible/Vaults.md",
+    "Ansible/Vars & Vars Files.md",
+    "Ansible/Modules.md",
+    "Ansible/Handlers.md",
+    "IMAGES/Pasted image 20250119003340.png",
+    "NetSec/PAT.md",
+    "IMAGES/Pasted image 20250118165225.png",
+    "IMAGES/Pasted image 20250118165032.png",
+    "IMAGES/Pasted image 20250118164955.png",
+    "IMAGES/Pasted image 20250118155911.png",
+    "IMAGES/Pasted image 20250118155810.png",
+    "IMAGES/Pasted image 20250118155747.png",
+    "IMAGES/Pasted image 20250118155640.png",
+    "IMAGES/Pasted image 20250118155546.png",
+    "IMAGES/Pasted image 20250118155320.png",
+    "NetSec/ACL.md",
+    "AWS/Bastion Host.md",
+    "AWS/VPC.md",
+    "AWS/Untitled",
+    "AWS/Placement Groups.md",
+    "AWS/HA vs VHA vs FT.md",
+    "AWS/Security Groups.md",
+    "AWS/NACL.md",
+    "AWS/EC2.md",
+    "AWS/Elastic IP.md",
+>>>>>>> f49f1614c23fafd8ee15877708a93f92809fabb1
     "AWS/IAM.md",
     "AWS/Load Balancing & Auto Scaling.md",
     "AWS/VPC.md",
