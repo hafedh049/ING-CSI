@@ -1,32 +1,24 @@
 {
   "main": {
-    "id": "ec154a89f47d994f",
+    "id": "2943ef5a23c7d11d",
     "type": "split",
     "children": [
       {
-        "id": "91ee82d6e9be847a",
+        "id": "d2d3d1f6142c51d7",
         "type": "tabs",
         "children": [
           {
-            "id": "cce4925a9eecf37f",
+            "id": "c98340123d8b2e53",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-<<<<<<< HEAD
-                "file": "AWS/SSO.md",
-=======
-                "file": "Ansible/Modules.md",
->>>>>>> f49f1614c23fafd8ee15877708a93f92809fabb1
+                "file": "Biometrie & Tattouage/Introduction.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-<<<<<<< HEAD
-              "title": "SSO"
-=======
-              "title": "Modules"
->>>>>>> f49f1614c23fafd8ee15877708a93f92809fabb1
+              "title": "Introduction"
             }
           }
         ]
@@ -35,27 +27,27 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "3910018cabf50067",
+    "id": "31011d543afbb03f",
     "type": "split",
     "children": [
       {
-        "id": "6cb457bb536ed31f",
+        "id": "17ec318523b43e74",
         "type": "tabs",
         "children": [
           {
-            "id": "c6150e859d2279be",
+            "id": "9078c0d27c9f6fc4",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "byModifiedTime"
+                "sortOrder": "alphabetical"
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
             }
           },
           {
-            "id": "3749f68bdc876b23",
+            "id": "7ca20372f416dc2b",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -72,7 +64,7 @@
             }
           },
           {
-            "id": "039a3c1c01054cf7",
+            "id": "1ac6e0b73bdc6d9f",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -85,23 +77,22 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 300
   },
   "right": {
-    "id": "c564bc5b6c5c4087",
+    "id": "d582e5c243f931f6",
     "type": "split",
     "children": [
       {
-        "id": "06b18d47e4a820e8",
+        "id": "9c33f997e05afe0e",
         "type": "tabs",
         "children": [
           {
-            "id": "696d470ccff3f402",
+            "id": "f9c4c710ab3dabb8",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Agile/Projet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,25 +102,24 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Projet"
+              "title": "Backlinks"
             }
           },
           {
-            "id": "01033eeae3a927ce",
+            "id": "6c40bdabe8907fd4",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Agile/Projet.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Projet"
+              "title": "Outgoing links"
             }
           },
           {
-            "id": "8885367b1ea16d4c",
+            "id": "259f89678661a7f5",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -142,15 +132,13 @@
             }
           },
           {
-            "id": "3785ded870e6bd73",
+            "id": "fe63c4a35db3933e",
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Agile/Projet.md"
-              },
+              "state": {},
               "icon": "lucide-list",
-              "title": "Outline of Projet"
+              "title": "Outline"
             }
           }
         ]
@@ -170,87 +158,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8230d98ef3568afa",
+  "active": "c98340123d8b2e53",
   "lastOpenFiles": [
-<<<<<<< HEAD
-    "AWS/AWS Organizations.md",
-    "AWS/SSO.md",
-    "IMAGES/AWS_OU.webp",
-    "AWS/Route 53.md",
-    "IMAGES/Pasted image 20250121175559.png",
-    "IMAGES/Pasted image 20250121174544.png",
-    "IMAGES/Pasted image 20250121174524.png",
-    "IMAGES/f0a1bb2c-a1bc-40ce-abde-6fb9d2a66ce8_1600x570.webp",
-    "AWS/Serverless.md",
-    "AWS/RDS.md",
-=======
-    "Ansible/Playbook Form.md",
-    "Ansible/Hall Of Fame.md",
-    "Ansible/Facts.md",
-    "Ansible/Ansible.cfg & Inventory.md",
-    "Ansible/Ansible.md",
-    "Ansible/AD-HOC.md",
-    "Ansible/Vaults.md",
-    "Ansible/Vars & Vars Files.md",
-    "Ansible/Modules.md",
-    "Ansible/Handlers.md",
-    "IMAGES/Pasted image 20250119003340.png",
-    "NetSec/PAT.md",
-    "IMAGES/Pasted image 20250118165225.png",
-    "IMAGES/Pasted image 20250118165032.png",
-    "IMAGES/Pasted image 20250118164955.png",
-    "IMAGES/Pasted image 20250118155911.png",
-    "IMAGES/Pasted image 20250118155810.png",
-    "IMAGES/Pasted image 20250118155747.png",
-    "IMAGES/Pasted image 20250118155640.png",
-    "IMAGES/Pasted image 20250118155546.png",
-    "IMAGES/Pasted image 20250118155320.png",
-    "NetSec/ACL.md",
-    "AWS/Bastion Host.md",
-    "AWS/VPC.md",
-    "AWS/Untitled",
-    "AWS/Placement Groups.md",
-    "AWS/HA vs VHA vs FT.md",
-    "AWS/Security Groups.md",
-    "AWS/NACL.md",
-    "AWS/EC2.md",
-    "AWS/Elastic IP.md",
->>>>>>> f49f1614c23fafd8ee15877708a93f92809fabb1
-    "AWS/IAM.md",
-    "AWS/Load Balancing & Auto Scaling.md",
-    "AWS/VPC.md",
-    "IMAGES/Pasted image 20250121155020.png",
-    "AWS/EC2.md",
-    "IMAGES/Pasted image 20250121151232.png",
-    "AWS/AWS.md",
-    "AWS/Cloud Computing.md",
-    "IMAGES/Pasted image 20250121141719.jpg",
-    "NetSec/NOTES.md",
-    "NetSec/NAT.md",
-    "NetSec/P-VLAN.md",
-    "NetSec/British Museum.md",
-    "NetSec/ACL.md",
-    "Ansible/Modules.md",
-    "Ansible/Hall Of Fame.md",
-    "Ansible/Vaults.md",
-    "IMAGES/Pasted image 20250119171312.png",
-    "IMAGES/Pasted image 20250119182240.png",
-    "NetSec/Stateful Firewall.md",
-    "NetSec/Zones.md",
-    "NetSec/IPV6.md",
-    "NetSec/Security.md",
-    "NetSec/CBAC.md",
-    "NetSec/X2.md",
-    "NetSec/X1.md",
-    "AWS/Untitled",
-    "Untitled",
-    "Ansible",
-    "Cryptography/Les modes de chiffrements par blocs",
-    "Symfony/CMD.zip",
-    "IMAGES",
-    "New folder",
-    "Symfony",
-    "Windows",
-    "Droit d'Entreprise"
+    "Quantom Cryptography/Commands & Tools.md",
+    "Biometrie & Tattouage/Introduction.md",
+    "Biometrie & Tattouage",
+    "Quantom Cryptography/Introduction.md",
+    "Quantom Cryptography"
   ]
 }
