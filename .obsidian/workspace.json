@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "d2d3d1f6142c51d7",
+        "id": "13aa2ef93cb4b98e",
         "type": "tabs",
         "children": [
           {
-            "id": "c98340123d8b2e53",
+            "id": "a6c1aa879a4093e6",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Biometrie & Tattouage/Introduction.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Introduction"
+              "title": "New tab"
             }
           }
         ]
@@ -158,10 +154,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c98340123d8b2e53",
+  "active": "9078c0d27c9f6fc4",
   "lastOpenFiles": [
+    "NetSec V2",
+    "Biometrie & Tattouage/CIA Triads.md",
+    "Biometrie & Tattouage/MTXX.md",
+    "Biometrie & Tattouage/OSI Model.md",
     "Quantom Cryptography/Commands & Tools.md",
-    "Biometrie & Tattouage/Introduction.md",
+    "PenTest/Introduction.md",
+    "PenTest",
+    "Database Security",
     "Biometrie & Tattouage",
     "Quantom Cryptography/Introduction.md",
     "Quantom Cryptography"
