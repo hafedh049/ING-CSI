@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "13aa2ef93cb4b98e",
+        "id": "340813575e7c7802",
         "type": "tabs",
         "children": [
           {
-            "id": "a6c1aa879a4093e6",
+            "id": "bcd2b9111f995157",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "PenTest/Chapter II.md",
+                "mode": "preview",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Chapter II"
             }
           }
         ]
@@ -36,7 +40,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -146,6 +151,8 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-excalidraw-plugin:New drawing": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -154,18 +161,33 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9078c0d27c9f6fc4",
+  "active": "bcd2b9111f995157",
   "lastOpenFiles": [
+    "PenTest/Chapter I.md",
+    "PenTest/Chapter II.md",
+    "Database Security/Chapter III.md",
+    "Database Security/Chapter II.md",
+    "Database Security/Chapter I.md",
+    "Quantom Cryptography/Introduction.md",
+    "Quantom Cryptography/Commands & Tools.md",
+    "Quantom Cryptography/Quantum Algorithms.md",
+    "RHCCS/Exam.md",
+    "Reseaux II/TP1.md",
+    "Reseaux II/Untitled.md",
+    "RHCCS",
+    "Reseaux II/Router Commands.md",
+    "Reseaux II/Cisco Components Structure.md",
+    "AWS/Serverless.md",
+    "Biometrie & Tattouage/Certifications.md",
+    "Database Security",
+    "Reseaux II",
     "NetSec V2",
     "Biometrie & Tattouage/CIA Triads.md",
     "Biometrie & Tattouage/MTXX.md",
     "Biometrie & Tattouage/OSI Model.md",
-    "Quantom Cryptography/Commands & Tools.md",
-    "PenTest/Introduction.md",
     "PenTest",
     "Database Security",
     "Biometrie & Tattouage",
-    "Quantom Cryptography/Introduction.md",
     "Quantom Cryptography"
   ]
 }
