@@ -12,9 +12,7 @@ DATAFILE '/u01/oradata/my_tablespace.dbf'
 SIZE 100M 
 AUTOEXTEND ON 
 NEXT 50M 
-MAXSIZE 500M 
-EXTENT MANAGEMENT LOCAL 
-SEGMENT SPACE MANAGEMENT AUTO;
+MAXSIZE 500M;
 ```
 
 - `DATAFILE`: Specifies the file location.
@@ -22,9 +20,6 @@ SEGMENT SPACE MANAGEMENT AUTO;
 - `AUTOEXTEND ON`: Allows the file to grow automatically.
 - `NEXT`: Specifies the increment for auto-extension.
 - `MAXSIZE`: Sets the maximum allowed size.
-- `EXTENT MANAGEMENT LOCAL`: Uses locally managed extents.
-- `SEGMENT SPACE MANAGEMENT AUTO`: Uses **Automatic Segment Space Management (ASSM)**.
-
 #### **Temporary Tablespace**
 
 ```sql

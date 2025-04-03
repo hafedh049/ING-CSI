@@ -1,14 +1,14 @@
 ## **1. Procedure Structure**
 
 A **procedure** is a subprogram that performs an action but does **not** return a value.
-
 ### **Syntax**
 
 ```sql
 CREATE [OR REPLACE] PROCEDURE procedure_name (
     parameter1 [IN | OUT | IN OUT] datatype,
     parameter2 [IN | OUT | IN OUT] datatype
-) IS
+) 
+IS
     -- Declarations (variables, constants, cursors)
 BEGIN
     -- Executable statements
@@ -24,7 +24,8 @@ END procedure_name;
 CREATE OR REPLACE PROCEDURE update_salary (
     emp_id IN NUMBER,
     new_salary IN NUMBER
-) IS
+) 
+IS
 BEGIN
     UPDATE employees SET salary = new_salary WHERE employee_id = emp_id;
     COMMIT;
@@ -46,7 +47,8 @@ A **function** is a subprogram that returns a single value.
 CREATE [OR REPLACE] FUNCTION function_name (
     parameter1 [IN] datatype,
     parameter2 [IN] datatype
-) RETURN return_datatype IS
+) RETURN return_datatype 
+IS
     -- Declarations (variables, constants, cursors)
 BEGIN
     -- Executable statements
@@ -61,7 +63,8 @@ END function_name;
 ```sql
 CREATE OR REPLACE FUNCTION get_employee_salary (
     emp_id IN NUMBER
-) RETURN NUMBER IS
+) RETURN NUMBER 
+IS
     emp_salary NUMBER;
 BEGIN
     SELECT salary INTO emp_salary FROM employees WHERE employee_id = emp_id;
@@ -162,6 +165,4 @@ after running the procedure to check for any issues.
 ✅ The `/` is a **command separator** in SQL*Plus, SQLcl, and some other tools.  
 ✅ It signals the end of a **procedure** or **function** definition.  
 ✅ It's **not part of PL/SQL syntax** but needed for execution in some environments.
-
----
 

@@ -4,39 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "80121739b24c697c",
+        "id": "39bcc48dd6763049",
         "type": "tabs",
         "children": [
           {
-            "id": "48836aa643da7c9e",
+            "id": "f59d2a25a7481ef5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Biometrie & Tattouage/LBP.md",
-                "mode": "source",
+                "file": "Database Security/Chapter IV.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "LBP"
-            }
-          },
-          {
-            "id": "c88323bc28646fe2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Biometrie & Tattouage/DCT.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "DCT"
+              "title": "Chapter IV"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -156,16 +141,28 @@
               "icon": "lucide-list",
               "title": "Outline"
             }
+          },
+          {
+            "id": "bc7192235a4da52f",
+            "type": "leaf",
+            "state": {
+              "type": "mermaid-toolbar-view",
+              "state": {},
+              "icon": "trident-custom",
+              "title": "Mermaid Toolbar"
+            }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300,
+    "width": 200,
     "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
+      "mermaid-tools:Open Mermaid Toolbar": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "obsidian-excalidraw-plugin:New drawing": false,
       "switcher:Open quick switcher": false,
@@ -176,42 +173,52 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c88323bc28646fe2",
+  "active": "f59d2a25a7481ef5",
   "lastOpenFiles": [
-    "Biometrie & Tattouage/DCT.md",
-    "Biometrie & Tattouage/DWT.md",
-    "Biometrie & Tattouage/Final.md",
-    "Biometrie & Tattouage/First.md",
-    "Biometrie & Tattouage/HOG.md",
+    "Database Security/Exam I.md",
     "Database Security/Chapter V.md",
-    "Ninja/Session Prediction.md",
-    "Ninja",
-    "Biometrie & Tattouage/LBP.md",
     "Database Security/Chapter IV.md",
-    "Database Security/Chapter II.md",
     "Database Security/Chapter III.md",
+    "Database Security/Chapter II.md",
     "Database Security/Chapter I.md",
-    "OSINT.md",
+    "Projet Architecture Réseaux/Mr Robot.md",
+    "IMAGES/Pasted image 20250401175312.png",
+    "IMAGES/Pasted image 20250401175257.png",
+    "IMAGES/Pasted image 20250401175244.png",
+    "IMAGES/Pasted image 20250401175215.png",
+    "IMAGES/Pasted image 20250401175207.png",
+    "IMAGES/Pasted image 20250401175144.png",
+    "IMAGES/Pasted image 20250401175132.png",
+    "IMAGES/Pasted image 20250401175121.png",
+    "IMAGES/Pasted image 20250401175108.png",
+    "IMAGES/Pasted image 20250401175053.png",
+    "Projet Architecture Réseaux/ByteSec.md",
+    "Reseaux II/Part II.md",
+    "Projet Architecture Réseaux",
+    "Reseaux II/Part I.md",
+    "Database Security/TP1.md",
+    "Ninja/Session Prediction.md",
+    "Biometrie & Tattouage/Team II.md",
+    "Biometrie & Tattouage/Team.md",
+    "PenTest/🔐 PENETRATION TESTING REPORT 🔐.md",
+    "Biometrie & Tattouage/Report.md",
+    "CKA/Components.md",
+    "CKA",
+    "PenTest/Report (Hafedh GUENICHI SSIR-J-A) ♥.md",
+    "VulnCMS.md",
+    "Biometrie & Tattouage/Final.md",
     "Biometrie & Tattouage/Certifications.md",
-    "Reseaux II/TP1.md",
-    "Quantom Cryptography/DS Jour.md",
-    "Reseaux II/Untitled.md",
-    "Quantom Cryptography/DS Soir.md",
-    "Quantom Cryptography/Quantum Algorithms.md",
-    "Quantom Cryptography/Introduction.md",
-    "PenTest/Chapter II.md",
-    "PenTest/Chapter I.md",
-    "Quantom Cryptography/Commands & Tools.md",
-    "RHCCS/Exam.md",
+    "PenTest/Project.md",
+    "PenTest/Final Project.md",
+    "Pen.md",
+    "OSINT.md",
+    "Ninja",
     "RHCCS",
-    "Reseaux II/Router Commands.md",
-    "Reseaux II/Cisco Components Structure.md",
     "Database Security",
     "Reseaux II",
     "NetSec V2",
     "PenTest",
     "Database Security",
-    "Biometrie & Tattouage",
-    "Quantom Cryptography"
+    "Biometrie & Tattouage"
   ]
 }

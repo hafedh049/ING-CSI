@@ -3,5 +3,9 @@
   "obsidian-emoji-toolbar",
   "obsidian-latex-suite",
   "table-editor-obsidian",
-  "obsidian-excalidraw-plugin"
+  "obsidian-excalidraw-plugin",
+  "mermaid-tools",
+  "obsidian-regex-replace",
+  "file-explorer-plus",
+  "obsidian-dynamic-highlights"
 ]

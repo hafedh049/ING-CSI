@@ -1,9 +1,9 @@
-# 🏛️ **Architecture d'une Base de Données Oracle : Voyage au Cœur du Système**
+	# 🏛️ **Architecture d'une Base de Données Oracle : Voyage au Cœur du Système**
 
 Une **base de données Oracle** est une véritable **forteresse numérique**, où les données sont protégées, organisées et optimisées pour des performances maximales. Son architecture repose sur deux piliers fondamentaux :
 
 🔹 **Le côté physique** (les fichiers stockés sur le disque)  
-🔹 **Le côté logique** (l’organisation interne des données)
+🔹 **Le côté logique** (l’organisation interne des données) (tablespaces)
 
 ---
 
@@ -40,8 +40,6 @@ Sans ce fichier, impossible de monter la base ! 😱
 
 🔸 **Cœur de la base**, ces fichiers stockent les données des tables, index, vues... Ils sont rattachés à des **tablespaces** comme :  
 📂 `SYSTEM` - Contient le **dictionnaire de données**  
-📂 `SYSAUX` - Stocke les outils de gestion  
-📂 `USERS` - Contient les données des utilisateurs  
 📂 `TEMP` - Espace temporaire pour les tris
 
 ---
@@ -112,17 +110,14 @@ Elle repose sur **deux piliers fondamentaux** :
 
 👷‍♂️ Oracle fonctionne grâce à une armée de **processus en arrière-plan**. Les principaux sont :
 
-|**Nom**|**Rôle**|
-|---|---|
-|`PMON` (Process Monitor)|Nettoie les sessions et libère les ressources après une panne|
-|`SMON` (System Monitor)|Récupère la base en cas de crash et gère les extents fragmentés|
-|`DBWn` (Database Writer)|Écrit les blocs modifiés en mémoire vers les fichiers de données|
-|`LGWR` (Log Writer)|Écrit les transactions validées dans les redo logs|
-|`CKPT` (Checkpoint)|Met à jour les fichiers de contrôle et les fichiers de données|
-|`ARCH` (Archiver)|Archive les redo logs en mode `ARCHIVELOG`|
-|`MMAN` (Memory Manager)|Gère la mémoire dynamique de l’instance|
-|`MMON` (Manageability Monitor)|Collecte les statistiques de performances|
-|`RECO` (Recovery)|Gère la récupération des transactions en attente dans un environnement distribué|
+| **Nom**                        | **Rôle**                                                                         |
+| ------------------------------ | -------------------------------------------------------------------------------- |
+| `PMON` (Process Monitor)       | Nettoie les sessions et libère les ressources après une panne                    |
+| `SMON` (System Monitor)        | Récupère la base en cas de crash et gère les extents fragmentés                  |
+| `DBWn` (Database Writer)       | Écrit les blocs modifiés en mémoire vers les fichiers de données                 |
+| `LGWR` (Log Writer)            | Écrit les transactions validées dans les redo logs                               |
+| `CKPT` (Checkpoint)            | Met à jour les fichiers de contrôle et les fichiers de données                   |
+| `ARCH` (Archiver)              | Archive les redo logs en mode `ARCHIVELOG`                                       |
 
 ---
 
@@ -136,19 +131,6 @@ Elle repose sur **deux piliers fondamentaux** :
 |🟡 **Nomount (Pré-Monté)**|L’instance est démarrée, la mémoire est allouée, mais la base reste inaccessible.|
 |🟠 **Mount (Monté)**|Les fichiers de contrôle sont chargés, mais les données ne sont pas encore accessibles.|
 |🟢 **Open (Ouvert)**|La base est **complètement active**, les utilisateurs peuvent exécuter des requêtes.|
-
----
-
-## **🎯 Conclusion : L’Oracle de l’Excellence**
-
-La **base de données Oracle** est une **mécanique de précision**, où chaque composant joue un rôle stratégique. 🔥
-
-💡 **À retenir :**  
-✅ **Les fichiers physiques** assurent **la persistance et la sécurité** des données.  
-✅ **L’instance Oracle** orchestre **l’accès et l’exécution des requêtes**.  
-✅ **SGA et PGA** optimisent les **performances**.  
-✅ **Les processus de fond** assurent **la stabilité et la récupération**.  
-✅ **Les différents modes** déterminent **l’état d’activation de la base**.
 
 ---
 # 📖 **Le Dictionnaire de Données Oracle : Le Cerveau Caché du Système**
@@ -170,11 +152,10 @@ Il joue un rôle **critique** dans la gestion et l’optimisation du système en
 
 Le dictionnaire de données est composé principalement de **trois types de vues système** qui permettent d'exploiter ces informations :
 
-|**Type**|**Préfixe**|**Description**|
-|---|---|---|
-|**Vues Statique (`USER_*`, `ALL_*`, `DBA_*`)**|`USER_`, `ALL_`, `DBA_`|Contiennent les métadonnées des objets de la BD|
-|**Vues Dynamiques (`V$`, `GV$`)**|`V$`, `GV$`|Données en temps réel sur l’état du système|
-|**Tables Internes**|Aucun préfixe visible|Tables système stockant les informations de bas niveau|
+| **Type**                                       | **Préfixe**             | **Description**                                        |
+| ---------------------------------------------- | ----------------------- | ------------------------------------------------------ |
+| **Vues Statique (`USER_*`, `ALL_*`, `DBA_*`)** | `USER_`, `ALL_`, `DBA_` | Contiennent les métadonnées des objets de la BD        |
+| **Vues Dynamiques (`V$`, `GV$`)**              | `V$`, `GV$`             | Données en temps réel sur l’état du système            |
 
 ---
 
@@ -183,11 +164,11 @@ Le dictionnaire de données est composé principalement de **trois types de vues
 Ces vues permettent d’accéder aux métadonnées des objets de la base.  
 Elles sont classées en trois catégories selon leur portée :
 
-|**Préfixe**|**Accessibilité**|**Utilisation**|
-|---|---|---|
-|`USER_*`|L’utilisateur connecté uniquement|Liste ses propres objets|
-|`ALL_*`|L’utilisateur + Objets accessibles|Voir ses objets + ceux avec accès|
-|`DBA_*`|Réservé aux administrateurs|Voir tout dans la base|
+| **Préfixe** | **Accessibilité**                  | **Utilisation**                   |
+| ----------- | ---------------------------------- | --------------------------------- |
+| `USER_*`    | L’utilisateur connecté uniquement  | Liste ses propres objets          |
+| `ALL_*`     | L’utilisateur + Objets accessibles | Voir ses objets + ceux avec accès |
+| `DBA_*`     | Réservé aux administrateurs        | Voir tout dans la base            |
 
 ### **📌 Exemples Importants :**
 
@@ -210,17 +191,14 @@ Elles sont classées en trois catégories selon leur portée :
 
 Contrairement aux vues statiques, les vues `V$` fournissent des informations **dynamiques en temps réel** sur l'état du système.
 
-|**Nom de la Vue**|**Rôle**|
-|---|---|
-|`V$INSTANCE`|Infos sur l’instance en cours|
-|`V$DATABASE`|Infos générales sur la base|
-|`V$SESSION`|Sessions actives et connexions|
-|`V$SQL`|Liste des requêtes en cours|
-|`V$LOG`|Infos sur les redo logs|
-|`V$SGA`|Infos sur la mémoire (SGA)|
-|`V$PGA`|Infos sur la mémoire privée|
-|`V$PROCESS`|Processus actifs dans Oracle|
-|`V$FILESTAT`|Statistiques d’E/S sur les fichiers|
+| **Nom de la Vue** | **Rôle**                       |
+| ----------------- | ------------------------------ |
+| `V$INSTANCE`      | Infos sur l’instance en cours  |
+| `V$DATABASE`      | Infos générales sur la base    |
+| `V$SESSION`       | Sessions actives et connexions |
+| `V$LOG`           | Infos sur les redo logs        |
+| `V$SGA`           | Infos sur la mémoire (SGA)     |
+| `V$PGA`           | Infos sur la mémoire privée    |
 
 💡 **Exemple : Voir toutes les sessions actives**
 
@@ -236,25 +214,7 @@ SELECT group#, status, archived, thread# FROM v$log;
 ```
 
 ---
-
-## **🔍 4. Tables Internes du Dictionnaire de Données**
-
-Ces tables sont directement stockées dans le tablespace `SYSTEM`.  
-Elles sont accessibles **uniquement par Oracle**, mais peuvent être interrogées via les vues `DBA_*`.
-
-🔹 **Exemples de tables internes :**
-
-- **`TAB$`** : Stocke les tables
-- **`COL$`** : Stocke les colonnes
-- **`IND$`** : Stocke les index
-- **`USER$`** : Contient la liste des utilisateurs
-
-Ces tables sont **critiques** pour le bon fonctionnement du système.  
-⚠ **Ne jamais les modifier directement !**
-
----
-
-## **🚀 5. Pourquoi le Dictionnaire de Données est-il si Important ?**
+## **🚀 4. Pourquoi le Dictionnaire de Données est-il si Important ?**
 
 🔍 **Le dictionnaire de données permet à Oracle de :**  
 ✔ **Gérer les objets de la BD** (création, suppression, modification)  
