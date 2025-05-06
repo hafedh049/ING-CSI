@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "39bcc48dd6763049",
+        "id": "dce746b32f8cd6c6",
         "type": "tabs",
         "children": [
           {
-            "id": "f59d2a25a7481ef5",
+            "id": "20b58cf33d87ef92",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Database Security/Chapter IV.md",
+                "file": "PenTest/🔐 PENETRATION TESTING REPORT 🔐.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Chapter IV"
+              "title": "🔐 PENETRATION TESTING REPORT 🔐"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 201.5
   },
   "right": {
     "id": "d582e5c243f931f6",
@@ -113,7 +113,7 @@
               "type": "outgoing-link",
               "state": {
                 "linksCollapsed": false,
-                "unlinkedCollapsed": true
+                "unlinkedCollapsed": false
               },
               "icon": "links-going-out",
               "title": "Outgoing links"
@@ -126,7 +126,9 @@
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-tags",
               "title": "Tags"
@@ -137,7 +139,11 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {},
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
               "icon": "lucide-list",
               "title": "Outline"
             }
@@ -152,8 +158,7 @@
               "title": "Mermaid Toolbar"
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "horizontal",
@@ -170,55 +175,58 @@
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "templater-obsidian:Templater": false
     }
   },
-  "active": "f59d2a25a7481ef5",
+  "active": "20b58cf33d87ef92",
   "lastOpenFiles": [
-    "Database Security/Exam I.md",
-    "Database Security/Chapter V.md",
-    "Database Security/Chapter IV.md",
-    "Database Security/Chapter III.md",
-    "Database Security/Chapter II.md",
-    "Database Security/Chapter I.md",
-    "Projet Architecture Réseaux/Mr Robot.md",
-    "IMAGES/Pasted image 20250401175312.png",
-    "IMAGES/Pasted image 20250401175257.png",
-    "IMAGES/Pasted image 20250401175244.png",
-    "IMAGES/Pasted image 20250401175215.png",
-    "IMAGES/Pasted image 20250401175207.png",
-    "IMAGES/Pasted image 20250401175144.png",
-    "IMAGES/Pasted image 20250401175132.png",
-    "IMAGES/Pasted image 20250401175121.png",
-    "IMAGES/Pasted image 20250401175108.png",
-    "IMAGES/Pasted image 20250401175053.png",
-    "Projet Architecture Réseaux/ByteSec.md",
-    "Reseaux II/Part II.md",
-    "Projet Architecture Réseaux",
-    "Reseaux II/Part I.md",
-    "Database Security/TP1.md",
-    "Ninja/Session Prediction.md",
-    "Biometrie & Tattouage/Team II.md",
-    "Biometrie & Tattouage/Team.md",
-    "PenTest/🔐 PENETRATION TESTING REPORT 🔐.md",
+    "Biometrie & Tattouage/Readme.md",
+    "IMAGES/Pasted image 20250506004520.png",
+    "Biometrie & Tattouage/Partitions.md",
     "Biometrie & Tattouage/Report.md",
-    "CKA/Components.md",
-    "CKA",
-    "PenTest/Report (Hafedh GUENICHI SSIR-J-A) ♥.md",
-    "VulnCMS.md",
+    "Biometrie & Tattouage/LBP.md",
+    "Biometrie & Tattouage/HOG.md",
+    "Biometrie & Tattouage/First.md",
     "Biometrie & Tattouage/Final.md",
-    "Biometrie & Tattouage/Certifications.md",
-    "PenTest/Project.md",
-    "PenTest/Final Project.md",
-    "Pen.md",
-    "OSINT.md",
-    "Ninja",
-    "RHCCS",
-    "Database Security",
-    "Reseaux II",
-    "NetSec V2",
-    "PenTest",
-    "Database Security",
-    "Biometrie & Tattouage"
+    "Biometrie & Tattouage/DWT.md",
+    "Biometrie & Tattouage/DCT.md",
+    "IMAGES/Pasted image 20250505225555.png",
+    "OWASP/Arch.canvas",
+    "IMAGES/Pasted image 20250505225906.png",
+    "IMAGES/Pasted image 20250505225830.png",
+    "OWASP/Drawing 2025-05-05 22.47.38.excalidraw.md",
+    "OWASP/Part I.md",
+    "OWASP/Part II-III-IV.md",
+    "OWASP/Images/Pasted image 20250505201809.png",
+    "OWASP/Images/Pasted image 20250505211028.png",
+    "OWASP/Images/Pasted image 20250505211018.png",
+    "OWASP/Images/Pasted image 20250505210119.png",
+    "OWASP/Images/Pasted image 20250505205102.png",
+    "OWASP/Images/Pasted image 20250505205014.png",
+    "OWASP/HTTP.md",
+    "OWASP/TP I.md",
+    "OWASP/Tp IV.md",
+    "OWASP/TP II.md",
+    "Templater.md",
+    "OWASP/Part I.pdf",
+    "OWASP/Images",
+    "IMAGES/class58.xlsx",
+    "IMAGES/class58 1.xlsx",
+    "Biometrie & Tattouage/First Try.md",
+    "Projet Architecture Réseaux/Architecture.canvas",
+    "Biometrie & Tattouage/AD Automated.md",
+    "PenTest/Report (Hafedh GUENICHI SSIR-J-A).md",
+    "PenTest/🔐 PENETRATION TESTING REPORT 🔐.md",
+    "Reseaux II/Partie I & II.md",
+    "Reseaux II/Part I.md",
+    "Reseaux II/Part II.md",
+    "Poster.md",
+    "Projet Architecture Réseaux/VMs",
+    "class58 1.xlsx",
+    "class58.xlsx",
+    "OWASP",
+    "SIEM",
+    "Projet Architecture Réseaux"
   ]
 }

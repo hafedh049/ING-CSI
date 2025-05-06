@@ -7,5 +7,12 @@
   "mermaid-tools",
   "obsidian-regex-replace",
   "file-explorer-plus",
-  "obsidian-dynamic-highlights"
+  "obsidian-dynamic-highlights",
+  "obsidian-excel-to-markdown-table",
+  "advanced-canvas",
+  "theme-picker",
+  "mermaid-themes",
+  "execute-code",
+  "obsidian-pandoc",
+  "templater-obsidian"
 ]

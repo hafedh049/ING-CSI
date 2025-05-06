@@ -1,4 +1,4 @@
-Thought for 1 second### ByteSec Penetration Testing Report - Detailed Analysis
+### ByteSec Penetration Testing Report - Detailed Analysis
 
 ## 1. Reconnaissance Phase - Detailed Breakdown
 
@@ -10,12 +10,12 @@ The initial Nmap scan revealed four open ports. Let's analyze each service in de
 nmap -sV -sC -p- bytesec.vh -oN initial.nmap -v
 ```
 
-| Port | Service | Version | Analysis
-|-----|-----|-----|-----
-| 80/tcp | HTTP | Apache httpd 2.4.18 (Ubuntu) | Older version of Apache with potential vulnerabilities
-| 139/tcp | NetBIOS-SSN | Samba smbd 3.X - 4.X | NetBIOS service indicating Windows file sharing capabilities
-| 445/tcp | NetBIOS-SSN | Samba smbd 4.3.11-Ubuntu | SMB service for file sharing, potentially misconfigured
-| 2525/tcp | SSH | OpenSSH 7.2p2 Ubuntu 4ubuntu2.7 | Non-standard SSH port (usually 22), older version with potential vulnerabilities
+| Port     | Service     | Version                         | Analysis                                                                         |
+| -------- | ----------- | ------------------------------- | -------------------------------------------------------------------------------- |
+| 80/tcp   | HTTP        | Apache httpd 2.4.18 (Ubuntu)    | Older version of Apache with potential vulnerabilities                           |
+| 139/tcp  | NetBIOS-SSN | Samba smbd 3.X - 4.X            | NetBIOS service indicating Windows file sharing capabilities                     |
+| 445/tcp  | NetBIOS-SSN | Samba smbd 4.3.11-Ubuntu        | SMB service for file sharing, potentially misconfigured                          |
+| 2525/tcp | SSH         | OpenSSH 7.2p2 Ubuntu 4ubuntu2.7 | Non-standard SSH port (usually 22), older version with potential vulnerabilities |
 
 
 The SSH service running on a non-standard port (2525) indicates possible security through obscurity, which is not a robust security measure.
