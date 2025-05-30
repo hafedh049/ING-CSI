@@ -56,51 +56,63 @@ You said **all versions** and **request/response details**, so imma break it dow
 
 ### Status Codes — The full squad:
 
-|Code Range|Meaning|Examples|
-|---|---|---|
-|1xx|Informational|100 Continue|
-|2xx|Success|200 OK, 201 Created|
-|3xx|Redirection|301 Moved Permanently, 302 Found|
-|4xx|Client errors|400 Bad Request, 401 Unauthorized, 403 Forbidden, 404 Not Found|
-|5xx|Server errors|500 Internal Server Error, 503 Service Unavailable|
+| Code Range | Meaning       | Examples                                                        |
+| ---------- | ------------- | --------------------------------------------------------------- |
+| 1xx        | Informational | 100 Continue                                                    |
+| 2xx        | Success       | 200 OK, 201 Created                                             |
+| 3xx        | Redirection   | 301 Moved Permanently, 302 Found                                |
+| 4xx        | Client errors | 400 Bad Request, 401 Unauthorized, 403 Forbidden, 404 Not Found |
+| 5xx        | Server errors | 500 Internal Server Error, 503 Service Unavailable              |
+
+---
+## 🔥 HTTP **Request Headers** — Main & Supporting Roles
+
+| **Header**                  | **Purpose**                                                                     |
+| --------------------------- | ------------------------------------------------------------------------------- |
+| `Host`                      | Domain name of the server (required in HTTP/1.1)                                |
+| `User-Agent`                | Info about browser, OS, client type                                             |
+| `Accept`                    | Content types the client can understand (e.g., `text/html`, `application/json`) |
+| `Accept-Language`           | Preferred languages (e.g., `en-US`, `fr`)                                       |
+| `Accept-Encoding`           | Compression formats the client supports (e.g., `gzip`, `deflate`)               |
+| `Content-Type`              | MIME type of the body data (e.g., `application/json`, `multipart/form-data`)    |
+| `Content-Length`            | Size of the request body in bytes                                               |
+| `Authorization`             | Used to pass credentials (e.g., `Bearer token`, `Basic auth`)                   |
+| `Cookie`                    | Sends cookies previously set by the server                                      |
+| `Referer`                   | Page that originated the request (yep, it's spelled wrong historically 😅)      |
+| `Origin`                    | Used in CORS to identify where the request comes from                           |
+| `Connection`                | Controls whether the connection stays open (e.g., `keep-alive`, `close`)        |
+| `Cache-Control`             | Tells intermediate caches what to do with the request                           |
+| `Upgrade-Insecure-Requests` | Ask server to redirect HTTP to HTTPS                                            |
+| `If-Modified-Since`         | Client’s last copy date; helps with caching                                     |
+| `If-None-Match`             | Validator for cache validation (ETag value)                                     |
+| `DNT`                       | “Do Not Track” preference of the user                                           |
+| `X-Requested-With`          | Identifies AJAX requests (e.g., `XMLHttpRequest`)                               |
 
 ---
 
-### Request Headers — the main players:
+## 💎 HTTP **Response Headers** — Essentials + Nice-to-Haves
 
-- **Host:** Domain of the server.
-    
-- **User-Agent:** Browser or client type info.
-    
-- **Accept:** What content types the client can handle.
-    
-- **Content-Type:** Format of the data in the request body.
-    
-- **Authorization:** Credentials for authentication.
-    
-- **Cookie:** Stored data sent to the server.
-    
-- **Referer:** URL of the page that linked to the request URL.
-    
-- **Cache-Control:** Directives for caching.
-    
-
-### Response Headers — important ones:
-
-- **Content-Type:** Type of returned content.
-    
-- **Content-Length:** Size of response body.
-    
-- **Set-Cookie:** Set cookies on the client.
-    
-- **Cache-Control:** How long response can be cached.
-    
-- **Location:** URL for redirection.
-    
-- **Server:** Server software info.
-    
-- **Strict-Transport-Security:** Enforces HTTPS.
-    
+|**Header**|**Purpose**|
+|---|---|
+|`Content-Type`|Tells client the media type (e.g., `text/html`, `application/json`)|
+|`Content-Length`|Size of the response body|
+|`Set-Cookie`|Sets cookies in client browser|
+|`Cache-Control`|Cache directives like `no-store`, `max-age`, etc.|
+|`Expires`|When the response should be considered stale|
+|`ETag`|Identifier for a specific version of a resource|
+|`Last-Modified`|Timestamp of last modification|
+|`Location`|Used for redirection (e.g., 302 Found)|
+|`Server`|Info about the server software (can be hidden for security)|
+|`Strict-Transport-Security`|Enforces HTTPS for future requests|
+|`Access-Control-Allow-Origin`|CORS header that allows access from other origins|
+|`Access-Control-Allow-Methods`|Methods allowed for CORS (e.g., `GET`, `POST`)|
+|`Access-Control-Allow-Headers`|Allowed headers in CORS requests|
+|`X-Content-Type-Options`|Prevents MIME-sniffing (e.g., `nosniff`)|
+|`X-Frame-Options`|Prevents clickjacking (e.g., `DENY`, `SAMEORIGIN`)|
+|`X-XSS-Protection`|Activates XSS filters in older browsers|
+|`WWW-Authenticate`|Indicates authentication method (used with `401 Unauthorized`)|
+|`Retry-After`|When to retry after rate limit or downtime|
+|`Content-Disposition`|Suggests how to handle the content (inline/download)|
 
 ---
 
@@ -793,3 +805,109 @@ Using advanced Google search queries to find vulnerable sites or sensitive info 
         
 - **Side:** Server-side
     
+---
+### 💣 **Top Vulnerability Evaluation Factors**
+
+1. ### **Severity (Impact)**
+    
+    > How bad is it if this vuln gets exploited?
+    
+    - Can it leak sensitive data?
+        
+    - Full system takeover?
+        
+    - Just crashes the app?  
+        🧨 High impact = high priority.
+        
+2. ### **Exploitability (Ease of Exploitation)**
+    
+    > How easy is it for an attacker to exploit it?
+    
+    - Script kiddie level? Or nation-state level?
+        
+    - Needs physical access? Or just a URL?  
+        🧠 Easier = more dangerous.
+        
+3. ### **Exposure (Attack Surface)**
+    
+    > Is the vuln exposed to the world or just internal?
+    
+    - Public web app = bigger risk
+        
+    - Backend API on private network = less risky  
+        🌐 Public exposure = hot zone.
+        
+4. ### **CVSS Score (Common Vulnerability Scoring System)**
+    
+    > Industry standard score from 0.0 to 10.0
+    
+    - 9.0–10.0 = Critical 🚨
+        
+    - 7.0–8.9 = High
+        
+    - 4.0–6.9 = Medium
+        
+    - Below 4 = Low  
+        📊 Objective, helps compare stuff.
+        
+5. ### **Authentication Required**
+    
+    > Can the vuln be exploited by anyone, or only after login?
+    
+    - No login = wild danger 😱
+        
+    - Requires admin access = less critical
+        
+6. ### **Privilege Required After Exploitation**
+    
+    > What kind of access does the exploit give?
+    
+    - Root? Admin? RCE?
+        
+    - Just user-level access?  
+        👑 Higher privilege = bigger threat.
+        
+7. ### **Potential Business Impact**
+    
+    > What does this mean for the company?
+    
+    - Financial loss?
+        
+    - Reputation damage?
+        
+    - Legal risks (GDPR, HIPAA, etc.)  
+        💼 Business risk ≠ always technical risk.
+        
+8. ### **Availability of Fixes**
+    
+    > Is there a patch or mitigation?
+    
+    - No fix = 🚨 danger zone
+        
+    - Easy patch = handled quick
+        
+9. ### **Known Exploits in the Wild**
+    
+    > Are attackers already using this?
+    
+    - If yes, it’s **zero chill** time
+        
+    - Public POC = move fast, patch faster
+        
+10. ### **Time to Exploit**
+    
+    > How long does it take to actually exploit?
+    
+    - Instant click?
+        
+    - Needs setup/config?  
+        🕒 Faster = scarier.
+        
+
+---
+
+Wanna remember it all? Just think:  
+**"S.E.E. C.A.P P.A.K.T."**  
+(Sounds dumb, but hey it sticks 🤷‍♂️)
+
+Let me know if you want a table format or need help applying this to a real vuln.
