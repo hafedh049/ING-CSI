@@ -14,5 +14,6 @@
   "mermaid-themes",
   "execute-code",
   "obsidian-pandoc",
-  "templater-obsidian"
+  "templater-obsidian",
+  "webpage-html-export"
 ]
