@@ -4,49 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "001080f83bf0734c",
+        "id": "41e4ae264e509628",
         "type": "tabs",
         "children": [
           {
-            "id": "5fa9a03e50f07ec1",
+            "id": "eaadc3c546b92097",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Database Security/Examen II.md",
+                "file": "Pentest/Resume Pentest.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Examen II"
-            }
-          },
-          {
-            "id": "44ffadfb6b4f8289",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Database Security/Examen I.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Examen I"
-            }
-          },
-          {
-            "id": "59e1fda05c1937a5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Database Security/Resume.md",
-                "mode": "preview",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Resume"
+              "title": "Resume Pentest"
             }
           }
         ]
@@ -208,29 +180,33 @@
       "webpage-html-export:Export Vault to HTML": false
     }
   },
-  "active": "9078c0d27c9f6fc4",
+  "active": "eaadc3c546b92097",
   "lastOpenFiles": [
-    "Images/Pasted image 20250601113027.png",
+    "Pentest/Examen SOIR.md",
+    "Pentest/Examen 2024.md",
+    "VPN/Resume VPN.md",
+    "Pentest/Resume Pentest.md",
+    "VPN",
+    "Malware/Resume.md",
+    "Malware/Exam.md",
+    "Images/Pasted image 20250602163425.png",
+    "Images/Pasted image 20250602163414.png",
+    "Images/Pasted image 20250602163406.png",
+    "Database Security/Resume.md",
     "Database Security/Examen I.md",
     "Database Security/Examen II.md",
-    "Database Security/Resume.md",
+    "Conduit/Resume.md",
+    "Conduit",
+    "Images/Pasted image 20250601113027.png",
     "Images/Pasted image 20250601104322.png",
     "Summer Project.md",
     "Summer Project.canvas",
     "Pasted image 20250531165001.png",
     "Pasted image 20250531164403.png",
     "Pasted image 20250531164451.png",
-    "Pentest/Examen 2024.md",
-    "Pentest/Examen SOIR.md",
-    "Pentest/Resume.md",
     "Images/Pasted image 20250531144704.png",
     "Images/Pasted image 20250531144659.png",
-    "Images/Pasted image 20250531144654.png",
-    "OWASP/Pasted image 20250531140422.png",
-    "Images/Pasted image 20250531140418.png",
-    "Images/Pasted image 20250531140413.png",
     "Images",
-    "Malware/Malware Resume.md",
     "Pentest",
     "OWASP/OWASP.md",
     "Biometrie/Resume.md",
@@ -252,12 +228,8 @@
     "Database Security/Chaykh Al Jabal Khan.md",
     "Fortum/Website.md",
     "Fortum",
-    "Malware/JigSAW.md",
-    "PenTest/The Pharaos.md",
     "Malware",
     "OWASP/Arch.canvas",
-    "OWASP/Part I.pdf",
-    "OWASP/Images",
-    "IMAGES/class58.xlsx"
+    "OWASP/Part I.pdf"
   ]
 }
