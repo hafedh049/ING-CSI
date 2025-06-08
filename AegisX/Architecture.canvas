@@ -1,0 +1,1198 @@
+{
+  "edges": [
+    {
+      "fromNode": "87a4d154a433a9f5",
+      "fromSide": "right",
+      "id": "18e109ca7b1dac04",
+      "styleAttributes": {
+      },
+      "toNode": "63992cf541563d5b",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "87a4d154a433a9f5",
+      "fromSide": "right",
+      "id": "2cf39c812baa30a3",
+      "styleAttributes": {
+      },
+      "toNode": "b6bfd5d97ca5fbcb",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "295358ac258b32dc",
+      "fromSide": "right",
+      "id": "d118e25e22ae7d64",
+      "styleAttributes": {
+      },
+      "toNode": "63ea8e3a79f2ef46",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "295358ac258b32dc",
+      "fromSide": "right",
+      "id": "211cf6f44354310e",
+      "styleAttributes": {
+      },
+      "toNode": "fdc1d946f19e2923",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "295358ac258b32dc",
+      "fromSide": "right",
+      "id": "52c0ad3a20a08318",
+      "styleAttributes": {
+      },
+      "toNode": "d984791a27f8d592",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "295358ac258b32dc",
+      "fromSide": "right",
+      "id": "2ad63a008015828c",
+      "styleAttributes": {
+      },
+      "toNode": "f3903c99b227c2ff",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "295358ac258b32dc",
+      "fromSide": "right",
+      "id": "13d17c5c012f8ed2",
+      "styleAttributes": {
+      },
+      "toNode": "b7937e84de2c9202",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "295358ac258b32dc",
+      "fromSide": "right",
+      "id": "5f51d39df85325f6",
+      "styleAttributes": {
+      },
+      "toNode": "0319f24f69407af4",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "295358ac258b32dc",
+      "fromSide": "right",
+      "id": "844cb076c809191b",
+      "styleAttributes": {
+      },
+      "toNode": "d7ed1a2a7f603afc",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "9644cda2c03d4863",
+      "fromSide": "left",
+      "id": "6dbcb20f10e88d62",
+      "styleAttributes": {
+      },
+      "toNode": "be1d7548612600c4",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "9644cda2c03d4863",
+      "fromSide": "left",
+      "id": "a439e574efd3f60f",
+      "styleAttributes": {
+      },
+      "toNode": "0061b2faecc12da7",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "9644cda2c03d4863",
+      "fromSide": "bottom",
+      "id": "ed0981576d4e305a",
+      "styleAttributes": {
+      },
+      "toNode": "ac6a1522e6da650e",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "9644cda2c03d4863",
+      "fromSide": "bottom",
+      "id": "a9f0e99b29c930bc",
+      "styleAttributes": {
+      },
+      "toNode": "289e578a42d557d4",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "9644cda2c03d4863",
+      "fromSide": "right",
+      "id": "9beaf6b13eb0498b",
+      "styleAttributes": {
+      },
+      "toNode": "7ffb6ef9e1391165",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "9644cda2c03d4863",
+      "fromSide": "right",
+      "id": "dc90344491a7fed6",
+      "styleAttributes": {
+      },
+      "toNode": "b1114383b523bbb4",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "9644cda2c03d4863",
+      "fromSide": "right",
+      "id": "de35c858cd464034",
+      "styleAttributes": {
+      },
+      "toNode": "ee5adb49ed8714b6",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "9644cda2c03d4863",
+      "fromSide": "left",
+      "id": "2fb7b3ed8adbd385",
+      "styleAttributes": {
+      },
+      "toNode": "3be4c325de59daf7",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "9644cda2c03d4863",
+      "fromSide": "bottom",
+      "id": "cbd33139ca1d7d26",
+      "styleAttributes": {
+      },
+      "toNode": "61b2c1e8a2f980e9",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "b8755aaf2c95d16e",
+      "fromSide": "bottom",
+      "id": "bdf47c628e5962fd",
+      "styleAttributes": {
+      },
+      "toNode": "adf0d86756e395a6",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "55793fc7acdde892",
+      "fromSide": "bottom",
+      "id": "46374de2135884ed",
+      "styleAttributes": {
+      },
+      "toNode": "7d29910f0dd305ab",
+      "toSide": "right"
+    },
+    {
+      "fromNode": "35a961960073b46e",
+      "fromSide": "bottom",
+      "id": "4d9677d62e6890a5",
+      "styleAttributes": {
+      },
+      "toNode": "ecb7152669246ae1",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "2adaf4e870303da0",
+      "fromSide": "bottom",
+      "id": "8c28642e2e24ab2b",
+      "styleAttributes": {
+      },
+      "toNode": "057cc4205da5f6df",
+      "toSide": "right"
+    },
+    {
+      "fromNode": "32d7d251279cda11",
+      "fromSide": "bottom",
+      "id": "b2d97c0e2de538c9",
+      "styleAttributes": {
+      },
+      "toNode": "cb5f5e2983aa7e3f",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "afbd52f2b682b56d",
+      "fromSide": "bottom",
+      "id": "805a44fa4c6f3f24",
+      "styleAttributes": {
+      },
+      "toNode": "dadd84aba06ca692",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "d938953088651635",
+      "fromSide": "bottom",
+      "id": "f632a392877fb8eb",
+      "styleAttributes": {
+      },
+      "toNode": "0f77a613e9972457",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "f4fecb28614b714e",
+      "fromSide": "bottom",
+      "id": "8b1640acfc35a05e",
+      "styleAttributes": {
+      },
+      "toNode": "354805a792aa04d7",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "6efb38bb796ab3d1",
+      "fromSide": "bottom",
+      "id": "6d257b41e28babbe",
+      "styleAttributes": {
+      },
+      "toNode": "42c45ec12ad101ba",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "4b9a904185839557",
+      "fromSide": "right",
+      "id": "8585fb77ff26e870",
+      "styleAttributes": {
+      },
+      "toNode": "32171d49f1d85267",
+      "toSide": "right"
+    },
+    {
+      "fromNode": "e731f2e69053ae2e",
+      "fromSide": "right",
+      "id": "163cf967009c7c76",
+      "styleAttributes": {
+      },
+      "toNode": "27de926dcfc43d39",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "e731f2e69053ae2e",
+      "fromSide": "right",
+      "id": "314554452467fc17",
+      "styleAttributes": {
+      },
+      "toNode": "c4b6900893a036d9",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "e731f2e69053ae2e",
+      "fromSide": "right",
+      "id": "315298b9fb577e8e",
+      "styleAttributes": {
+      },
+      "toNode": "a47b3656ccdbf2c5",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "e731f2e69053ae2e",
+      "fromSide": "left",
+      "id": "827c7d04db0b33b6",
+      "styleAttributes": {
+      },
+      "toNode": "9ab7458c0f4db59f",
+      "toSide": "right"
+    },
+    {
+      "fromNode": "e731f2e69053ae2e",
+      "fromSide": "left",
+      "id": "d568ac47bd67e128",
+      "styleAttributes": {
+      },
+      "toNode": "1f332aeeb57a7756",
+      "toSide": "right"
+    },
+    {
+      "fromNode": "e731f2e69053ae2e",
+      "fromSide": "left",
+      "id": "60ce2ce8aeb55a6c",
+      "styleAttributes": {
+      },
+      "toNode": "b223eb6fe222e68e",
+      "toSide": "right"
+    },
+    {
+      "fromNode": "b223eb6fe222e68e",
+      "fromSide": "bottom",
+      "id": "c1eae2fff968b80e",
+      "styleAttributes": {
+      },
+      "toNode": "aaf178613fed085a",
+      "toSide": "top"
+    }
+  ],
+  "nodes": [
+    {
+      "color": "4",
+      "height": 1960,
+      "id": "cf0c29ab1e907c85",
+      "label": "Gen-Z",
+      "styleAttributes": {
+      },
+      "type": "group",
+      "width": 3160,
+      "x": -920,
+      "y": -2320
+    },
+    {
+      "height": 1220,
+      "id": "9fd1fd2e06c0aa36",
+      "label": "Honey Net",
+      "styleAttributes": {
+      },
+      "type": "group",
+      "width": 1180,
+      "x": -720,
+      "y": -280
+    },
+    {
+      "height": 660,
+      "id": "e01ce3559b439cef",
+      "label": "Ansible Cluster",
+      "styleAttributes": {
+      },
+      "type": "group",
+      "width": 1040,
+      "x": -640,
+      "y": 220
+    },
+    {
+      "color": "#00ccff",
+      "height": 610,
+      "id": "8863dcd004f937fa",
+      "label": "IPS / IDS",
+      "styleAttributes": {
+      },
+      "type": "group",
+      "width": 673,
+      "x": 720,
+      "y": 550
+    },
+    {
+      "color": "3",
+      "height": 480,
+      "id": "2208eb13be999728",
+      "label": "Threat Intelligence Tools & Sources",
+      "styleAttributes": {
+        "border": "dashed"
+      },
+      "type": "group",
+      "width": 640,
+      "x": 1220,
+      "y": -120
+    },
+    {
+      "color": "2",
+      "height": 580,
+      "id": "e36f758a8b44e664",
+      "label": "Components",
+      "styleAttributes": {
+      },
+      "type": "group",
+      "width": 500,
+      "x": -240,
+      "y": -2200
+    },
+    {
+      "height": 360,
+      "id": "bc7b0717fb4096e3",
+      "label": "FreeIPA",
+      "styleAttributes": {
+      },
+      "type": "group",
+      "width": 520,
+      "x": -160,
+      "y": -220
+    },
+    {
+      "height": 360,
+      "id": "3aaf34bb567865dd",
+      "label": "Active Directory",
+      "styleAttributes": {
+      },
+      "type": "group",
+      "width": 420,
+      "x": -600,
+      "y": -220
+    },
+    {
+      "color": "1",
+      "height": 309,
+      "id": "c520fc7d02450d4c",
+      "label": "Firewalls",
+      "styleAttributes": {
+        "border": "dashed"
+      },
+      "type": "group",
+      "width": 440,
+      "x": 580,
+      "y": 66
+    },
+    {
+      "color": "#fb9393",
+      "height": 280,
+      "id": "0ece06c48ce8299c",
+      "label": "Packages",
+      "styleAttributes": {
+      },
+      "type": "group",
+      "width": 320,
+      "x": 1120,
+      "y": -2050
+    },
+    {
+      "color": "3",
+      "height": 60,
+      "id": "35a961960073b46e",
+      "styleAttributes": {
+        "border": "dashed"
+      },
+      "text": "🧹 PHASE 2 — Log Normalization & Pre-Processing",
+      "type": "text",
+      "width": 274,
+      "x": -174,
+      "y": -1400
+    },
+    {
+      "color": "3",
+      "height": 60,
+      "id": "2adaf4e870303da0",
+      "styleAttributes": {
+        "border": "dashed"
+      },
+      "text": "🧠 PHASE 3 — Detection Layer",
+      "type": "text",
+      "width": 180,
+      "x": 126,
+      "y": -1400
+    },
+    {
+      "color": "6",
+      "file": "AegisX/Custom SIEM Phase I.md",
+      "height": 346,
+      "id": "adf0d86756e395a6",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "type": "file",
+      "width": 381,
+      "x": -881,
+      "y": -1237
+    },
+    {
+      "color": "6",
+      "file": "AegisX/Custom SIEM Phase II.md",
+      "height": 379,
+      "id": "7d29910f0dd305ab",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "type": "file",
+      "width": 400,
+      "x": -881,
+      "y": -827
+    },
+    {
+      "color": "6",
+      "file": "AegisX/Custom SIEM Phase V.md",
+      "height": 627,
+      "id": "cb5f5e2983aa7e3f",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "type": "file",
+      "width": 400,
+      "x": 236,
+      "y": -1095
+    },
+    {
+      "color": "6",
+      "file": "AegisX/Custom SIEM Phase VI.md",
+      "height": 640,
+      "id": "dadd84aba06ca692",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "type": "file",
+      "width": 400,
+      "x": 646,
+      "y": -1040
+    },
+    {
+      "color": "6",
+      "file": "AegisX/Custom SIEM Phase IV.md",
+      "height": 437,
+      "id": "057cc4205da5f6df",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "type": "file",
+      "width": 400,
+      "x": -300,
+      "y": -927
+    },
+    {
+      "height": 60,
+      "id": "9ab7458c0f4db59f",
+      "styleAttributes": {
+      },
+      "text": "👷 **Worker Node**",
+      "type": "text",
+      "width": 200,
+      "x": 10,
+      "y": -2180
+    },
+    {
+      "height": 60,
+      "id": "1f332aeeb57a7756",
+      "styleAttributes": {
+      },
+      "text": "🧠 **K8s Master**",
+      "type": "text",
+      "width": 180,
+      "x": -160,
+      "y": -2110
+    },
+    {
+      "height": 60,
+      "id": "b223eb6fe222e68e",
+      "styleAttributes": {
+      },
+      "text": "📦 **Pods**",
+      "type": "text",
+      "width": 140,
+      "x": -70,
+      "y": -2020
+    },
+    {
+      "color": "3",
+      "height": 60,
+      "id": "d938953088651635",
+      "styleAttributes": {
+        "border": "dashed"
+      },
+      "text": "📊 PHASE 6 — Real-Time Dashboard (Next.js + shadcn)",
+      "type": "text",
+      "width": 300,
+      "x": 886,
+      "y": -1400
+    },
+    {
+      "color": "3",
+      "height": 60,
+      "id": "f4fecb28614b714e",
+      "styleAttributes": {
+        "border": "dashed"
+      },
+      "text": "🧪 PHASE 7 — Testing & Sandbox Simulation",
+      "type": "text",
+      "width": 240,
+      "x": 1226,
+      "y": -1400
+    },
+    {
+      "color": "3",
+      "height": 60,
+      "id": "6efb38bb796ab3d1",
+      "styleAttributes": {
+        "border": "dashed"
+      },
+      "text": "🛠️ PHASE 8 — DevSecOps Integration",
+      "type": "text",
+      "width": 260,
+      "x": 1506,
+      "y": -1400
+    },
+    {
+      "color": "3",
+      "height": 60,
+      "id": "4b9a904185839557",
+      "styleAttributes": {
+        "border": "dashed"
+      },
+      "text": "🔮 PHASE 9 — Optional Enhancements",
+      "type": "text",
+      "width": 240,
+      "x": 1806,
+      "y": -1400
+    },
+    {
+      "color": "6",
+      "file": "AegisX/Custom SIEM Phase X.md",
+      "height": 400,
+      "id": "32171d49f1d85267",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "type": "file",
+      "width": 400,
+      "x": 1660,
+      "y": -890
+    },
+    {
+      "color": "6",
+      "file": "AegisX/Custom SIEM Phase IX.md",
+      "height": 283,
+      "id": "42c45ec12ad101ba",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "type": "file",
+      "width": 400,
+      "x": 1646,
+      "y": -1237
+    },
+    {
+      "color": "6",
+      "file": "AegisX/Custom SIEM Phase VIII.md",
+      "height": 280,
+      "id": "354805a792aa04d7",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "type": "file",
+      "width": 400,
+      "x": 1226,
+      "y": -1238
+    },
+    {
+      "color": "3",
+      "height": 60,
+      "id": "32d7d251279cda11",
+      "styleAttributes": {
+        "border": "dashed"
+      },
+      "text": "🚨 PHASE 4 — Alerting Engine",
+      "type": "text",
+      "width": 180,
+      "x": 346,
+      "y": -1400
+    },
+    {
+      "color": "3",
+      "height": 60,
+      "id": "afbd52f2b682b56d",
+      "styleAttributes": {
+        "border": "dashed"
+      },
+      "text": "🔁 PHASE 5 — SOAR Engine (Custom Python Beast)",
+      "type": "text",
+      "width": 280,
+      "x": 566,
+      "y": -1400
+    },
+    {
+      "color": "3",
+      "height": 60,
+      "id": "b8755aaf2c95d16e",
+      "styleAttributes": {
+        "border": "dashed"
+      },
+      "text": "🧱 PHASE 0 — Infrastructure Prep",
+      "type": "text",
+      "width": 261,
+      "x": -747,
+      "y": -1400
+    },
+    {
+      "color": "3",
+      "height": 60,
+      "id": "55793fc7acdde892",
+      "styleAttributes": {
+        "border": "dashed"
+      },
+      "text": "🚦 PHASE 1 — Data Ingestion Layer",
+      "type": "text",
+      "width": 227,
+      "x": -446,
+      "y": -1400
+    },
+    {
+      "color": "6",
+      "file": "AegisX/Custom SIEM Phase III.md",
+      "height": 326,
+      "id": "ecb7152669246ae1",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "type": "file",
+      "width": 400,
+      "x": -274,
+      "y": -1280
+    },
+    {
+      "height": 200,
+      "id": "aaf178613fed085a",
+      "styleAttributes": {
+      },
+      "text": "```css\nPod: Flask Collector\nPod: AI Analyzer (Regex, NLP, DL)\nPod: MongoDB for logs\nPod: SOAR Engine\nPod: Dashboard (Next.js + ShadCN)\nPod: Threat Intel Feeds\n```",
+      "type": "text",
+      "width": 390,
+      "x": -180,
+      "y": -1860
+    },
+    {
+      "height": 60,
+      "id": "a47b3656ccdbf2c5",
+      "styleAttributes": {
+      },
+      "text": "docker | containerd",
+      "type": "text",
+      "width": 220,
+      "x": 1180,
+      "y": -1867
+    },
+    {
+      "height": 60,
+      "id": "27de926dcfc43d39",
+      "styleAttributes": {
+      },
+      "text": "Minikube | K3s",
+      "type": "text",
+      "width": 180,
+      "x": 1200,
+      "y": -2020
+    },
+    {
+      "height": 60,
+      "id": "c4b6900893a036d9",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "kubectl",
+      "type": "text",
+      "width": 160,
+      "x": 1210,
+      "y": -1950
+    },
+    {
+      "color": "6",
+      "file": "Images/Pasted image 20250608171654.png",
+      "height": 281,
+      "id": "e731f2e69053ae2e",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "type": "file",
+      "width": 614,
+      "x": 346,
+      "y": -2020
+    },
+    {
+      "file": "Images/Pasted image 20250608105811.png",
+      "height": 128,
+      "id": "be1d7548612600c4",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "type": "file",
+      "width": 120,
+      "x": -630,
+      "y": 420
+    },
+    {
+      "file": "Images/Pasted image 20250608110712.png",
+      "height": 218,
+      "id": "ac6a1522e6da650e",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "type": "file",
+      "width": 218,
+      "x": -326,
+      "y": 484
+    },
+    {
+      "file": "Images/Pasted image 20250608110924.png",
+      "height": 127,
+      "id": "289e578a42d557d4",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "type": "file",
+      "width": 130,
+      "x": -40,
+      "y": 466
+    },
+    {
+      "file": "Images/Pasted image 20250608102215.png",
+      "height": 98,
+      "id": "0061b2faecc12da7",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "type": "file",
+      "width": 174,
+      "x": -547,
+      "y": 529
+    },
+    {
+      "file": "Images/Pasted image 20250608111431.png",
+      "height": 151,
+      "id": "3be4c325de59daf7",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "type": "file",
+      "width": 266,
+      "x": -460,
+      "y": 658
+    },
+    {
+      "file": "Images/Pasted image 20250608111040.png",
+      "height": 123,
+      "id": "b1114383b523bbb4",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "type": "file",
+      "width": 125,
+      "x": 218,
+      "y": 650
+    },
+    {
+      "file": "Images/Pasted image 20250608113125.png",
+      "height": 130,
+      "id": "61b2c1e8a2f980e9",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "type": "file",
+      "width": 130,
+      "x": -135,
+      "y": 658
+    },
+    {
+      "file": "Images/Pasted image 20250608105649.png",
+      "height": 120,
+      "id": "9644cda2c03d4863",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "type": "file",
+      "width": 98,
+      "x": -170,
+      "y": 240
+    },
+    {
+      "file": "Images/Pasted image 20250608111359.png",
+      "height": 110,
+      "id": "ee5adb49ed8714b6",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "type": "file",
+      "width": 110,
+      "x": 270,
+      "y": 356
+    },
+    {
+      "file": "Images/Pasted image 20250608111003.png",
+      "height": 131,
+      "id": "7ffb6ef9e1391165",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "type": "file",
+      "width": 131,
+      "x": 49,
+      "y": 678
+    },
+    {
+      "file": "Images/Pasted image 20250608113715.png",
+      "height": 181,
+      "id": "47b18870dcf276e4",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "type": "file",
+      "width": 272,
+      "x": 673,
+      "y": 194
+    },
+    {
+      "file": "Images/Pasted image 20250608174550.png",
+      "height": 102,
+      "id": "16cc8af6f11cfef5",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "type": "file",
+      "width": 144,
+      "x": 1321,
+      "y": 223
+    },
+    {
+      "file": "Images/Pasted image 20250608174314.png",
+      "height": 60,
+      "id": "51385d7953475708",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "type": "file",
+      "width": 313,
+      "x": 1290,
+      "y": 126
+    },
+    {
+      "file": "Images/Pasted image 20250608174445.png",
+      "height": 63,
+      "id": "7c0f3b5b9c589360",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "type": "file",
+      "width": 176,
+      "x": 1536,
+      "y": 40
+    },
+    {
+      "file": "Images/Pasted image 20250608174120.png",
+      "height": 157,
+      "id": "f53d6fcbb050c4e3",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "type": "file",
+      "width": 279,
+      "x": 1565,
+      "y": -102
+    },
+    {
+      "file": "Images/Pasted image 20250608103132.png",
+      "height": 84,
+      "id": "295358ac258b32dc",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "type": "file",
+      "width": 160,
+      "x": -180,
+      "y": -102
+    },
+    {
+      "file": "Images/Pasted image 20250608102215.png",
+      "height": 68,
+      "id": "63992cf541563d5b",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "type": "file",
+      "width": 120,
+      "x": -326,
+      "y": -114
+    },
+    {
+      "file": "Images/Pasted image 20250608104513.png",
+      "height": 80,
+      "id": "b7937e84de2c9202",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "type": "file",
+      "width": 80,
+      "x": 170,
+      "y": -40
+    },
+    {
+      "file": "Images/Pasted image 20250608104852.png",
+      "height": 60,
+      "id": "d984791a27f8d592",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "type": "file",
+      "width": 60,
+      "x": 0,
+      "y": 40
+    },
+    {
+      "file": "Images/Pasted image 20250608105204.png",
+      "height": 60,
+      "id": "d7ed1a2a7f603afc",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "type": "file",
+      "width": 79,
+      "x": -19,
+      "y": -200
+    },
+    {
+      "file": "Images/Pasted image 20250608104056.png",
+      "height": 132,
+      "id": "63ea8e3a79f2ef46",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "type": "file",
+      "width": 100,
+      "x": 230,
+      "y": -226
+    },
+    {
+      "file": "Images/Pasted image 20250608175012.png",
+      "height": 160,
+      "id": "d311d9ddef694a36",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "type": "file",
+      "width": 160,
+      "x": 1624,
+      "y": 165
+    },
+    {
+      "file": "Images/Pasted image 20250608174007.png",
+      "height": 172,
+      "id": "d7ea961808e23e32",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "type": "file",
+      "width": 254,
+      "x": 1266,
+      "y": -72
+    },
+    {
+      "color": "6",
+      "file": "AegisX/Custom SIEM Phase VII.md",
+      "height": 443,
+      "id": "0f77a613e9972457",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "type": "file",
+      "width": 400,
+      "x": 1236,
+      "y": -891
+    },
+    {
+      "file": "Images/Pasted image 20250608104610.png",
+      "height": 60,
+      "id": "0319f24f69407af4",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "type": "file",
+      "width": 60,
+      "x": 180,
+      "y": 60
+    },
+    {
+      "file": "Images/Pasted image 20250608104743.png",
+      "height": 60,
+      "id": "f3903c99b227c2ff",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "type": "file",
+      "width": 60,
+      "x": 270,
+      "y": 0
+    },
+    {
+      "file": "Images/Pasted image 20250608113458.png",
+      "height": 339,
+      "id": "eb67ce0b7ce825be",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "type": "file",
+      "width": 339,
+      "x": 640,
+      "y": -14
+    },
+    {
+      "file": "Images/Pasted image 20250608104646.png",
+      "height": 60,
+      "id": "fdc1d946f19e2923",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "type": "file",
+      "width": 60,
+      "x": -100,
+      "y": 60
+    },
+    {
+      "file": "Images/Pasted image 20250608102118.png",
+      "height": 160,
+      "id": "87a4d154a433a9f5",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "type": "file",
+      "width": 160,
+      "x": -600,
+      "y": -160
+    },
+    {
+      "file": "Images/Pasted image 20250608102328.png",
+      "height": 65,
+      "id": "b6bfd5d97ca5fbcb",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "type": "file",
+      "width": 62,
+      "x": -388,
+      "y": 40
+    },
+    {
+      "file": "Images/Pasted image 20250608190140.png",
+      "height": 147,
+      "id": "4ffc82d38d2aae7d",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "type": "file",
+      "width": 180,
+      "x": 1180,
+      "y": 586
+    },
+    {
+      "file": "Images/Pasted image 20250608190238.png",
+      "height": 130,
+      "id": "f2b0707d5393edce",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "type": "file",
+      "width": 260,
+      "x": 685,
+      "y": 595
+    },
+    {
+      "file": "Images/Pasted image 20250608191728.png",
+      "height": 164,
+      "id": "f328396a9388be19",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "type": "file",
+      "width": 174,
+      "x": 1143,
+      "y": 960
+    },
+    {
+      "file": "Images/Pasted image 20250608190448.png",
+      "height": 113,
+      "id": "e9e5c2ce13a3527e",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "type": "file",
+      "width": 200,
+      "x": 745,
+      "y": 929
+    },
+    {
+      "file": "Images/Pasted image 20250608185841.png",
+      "height": 156,
+      "id": "2dacdd40d84067bb",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "type": "file",
+      "width": 198,
+      "x": 945,
+      "y": 733
+    }
+  ]
+}

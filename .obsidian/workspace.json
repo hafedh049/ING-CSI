@@ -11,14 +11,17 @@
             "id": "eaadc3c546b92097",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "Pentest/Resume Pentest.md",
-                "mode": "preview",
-                "source": false
+                "file": "AegisX/Architecture.canvas",
+                "viewState": {
+                  "x": 1466.5283018867924,
+                  "y": 835.9857016509438,
+                  "zoom": -0.004529658480514676
+                }
               },
-              "icon": "lucide-file",
-              "title": "Resume Pentest"
+              "icon": "lucide-layout-dashboard",
+              "title": "Architecture"
             }
           }
         ]
@@ -94,6 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "AegisX/Architecture.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +107,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for Architecture"
             }
           },
           {
@@ -157,8 +161,19 @@
               "icon": "trident-custom",
               "title": "Mermaid Toolbar"
             }
+          },
+          {
+            "id": "57e311f4ba6c15f7",
+            "type": "leaf",
+            "state": {
+              "type": "mxmind-view",
+              "state": {},
+              "icon": "network",
+              "title": "Mxmind"
+            }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
@@ -177,59 +192,61 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "templater-obsidian:Templater": false,
-      "webpage-html-export:Export Vault to HTML": false
+      "webpage-html-export:Export Vault to HTML": false,
+      "mxmind:Mxmind": false
     }
   },
   "active": "eaadc3c546b92097",
   "lastOpenFiles": [
+    "Images/Pasted image 20250608191728.png",
+    "Images/Pasted image 20250608190448.png",
+    "Images/Pasted image 20250608190436.png",
+    "Images/Pasted image 20250608190238.png",
+    "Images/Pasted image 20250608190140.png",
+    "AegisX/IDS & IPS.md",
+    "Images/Pasted image 20250608171654.png",
+    "AegisX/Architecture.canvas",
+    "Images/Pasted image 20250608185841.png",
+    "Images/Pasted image 20250608175012.png",
+    "Images/Pasted image 20250608174852.png",
+    "Images/Pasted image 20250608174550.png",
+    "Images/Pasted image 20250608174445.png",
+    "AegisX/Gen-Z.md",
+    "AegisX/Custom SIEM Phase X.md",
+    "AegisX/Custom SIEM Phase IX.md",
+    "AegisX/Custom SIEM Phase IV.md",
+    "AegisX/Custom SIEM Phase VIII.md",
+    "AegisX/Custom SIEM Phase VII.md",
+    "AegisX/Custom SIEM Phase VI.md",
+    "AegisX/Custom SIEM Phase V.md",
+    "AegisX/Custom SIEM Phase III.md",
+    "AegisX/Custom SIEM Phase II.md",
+    "AegisX/Custom SIEM Phase I.md",
+    "AegisX/Custom SIEM.md",
+    "AegisX/Summer Project.canvas",
+    "AegisX/Summer Project.md",
+    "AegisX/Custom SIEM Steps.md",
+    "Pentest/Report (Hafedh GUENICHI ING-4-SSIR-J-A).md",
+    "AegisX",
+    "Pentest/Resume Pentest.md",
     "Pentest/Examen SOIR.md",
     "Pentest/Examen 2024.md",
     "VPN/Resume VPN.md",
-    "Pentest/Resume Pentest.md",
     "VPN",
     "Malware/Resume.md",
     "Malware/Exam.md",
-    "Images/Pasted image 20250602163425.png",
-    "Images/Pasted image 20250602163414.png",
-    "Images/Pasted image 20250602163406.png",
     "Database Security/Resume.md",
     "Database Security/Examen I.md",
     "Database Security/Examen II.md",
-    "Conduit/Resume.md",
     "Conduit",
-    "Images/Pasted image 20250601113027.png",
-    "Images/Pasted image 20250601104322.png",
-    "Summer Project.md",
-    "Summer Project.canvas",
-    "Pasted image 20250531165001.png",
-    "Pasted image 20250531164403.png",
-    "Pasted image 20250531164451.png",
-    "Images/Pasted image 20250531144704.png",
-    "Images/Pasted image 20250531144659.png",
     "Images",
     "Pentest",
-    "OWASP/OWASP.md",
-    "Biometrie/Resume.md",
-    "Biometrie/Examen SOIR.md",
-    "OWASP/Exam I.md",
-    "OWASP/Dorks.md",
-    "NetSec/Examen SOIR.md",
-    "NetSec/Firewall.md",
     "Biometrie",
-    "NetSec/VPN.md",
     "NetSec",
-    "Yassine SAHLI & Mayssa BEN NASR.md",
-    "Siwar.md",
     "Malware",
-    "VPN.md",
-    "Projet Architecture Réseaux/VMs/Agents.md",
-    "Projet Architecture Réseaux/VMs/Agent-II.md",
     "Projet Architecture Réseaux/Architecture.canvas",
-    "Database Security/Chaykh Al Jabal Khan.md",
-    "Fortum/Website.md",
     "Fortum",
     "Malware",
-    "OWASP/Arch.canvas",
-    "OWASP/Part I.pdf"
+    "OWASP/Arch.canvas"
   ]
 }
