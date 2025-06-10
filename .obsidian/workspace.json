@@ -4,24 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "41e4ae264e509628",
+        "id": "8f3958808a97c180",
         "type": "tabs",
         "children": [
           {
-            "id": "eaadc3c546b92097",
+            "id": "4657546e90bb8336",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "AegisX/Architecture.canvas",
-                "viewState": {
-                  "x": -201.8266228485304,
-                  "y": -1035.2985817738409,
-                  "zoom": -1.7058212588285402
-                }
+                "file": "AegisX/Report.md",
+                "mode": "preview",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "Architecture"
+              "icon": "lucide-file",
+              "title": "Report"
             }
           }
         ]
@@ -81,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 201.5,
-    "collapsed": true
+    "width": 201.5
   },
   "right": {
     "id": "d582e5c243f931f6",
@@ -197,20 +193,23 @@
       "mxmind:Mxmind": false
     }
   },
-  "active": "eaadc3c546b92097",
+  "active": "9078c0d27c9f6fc4",
   "lastOpenFiles": [
-    "Pentest/Report (Hafedh GUENICHI ING-4-SSIR-J-A).md",
-    "Images/Pasted image 20250608222315.png",
-    "Images/Pasted image 20250608225707.png",
-    "Images/Pasted image 20250608225446.png",
-    "Images/Pasted image 20250608223659.png",
-    "Images/Pasted image 20250608223033.png",
-    "Images/Pasted image 20250608222752.png",
-    "Images/Pasted image 20250608222642.png",
-    "Images/Pasted image 20250608200507.png",
+    "Images/Pasted image 20250611005250.png",
+    "AegisX/Exact Architecture.canvas",
+    "AegisX/Report.md",
+    "Images/Pasted image 20250610200425.png",
     "AegisX/Architecture.canvas",
-    "Images/Pasted image 20250608210259.png",
-    "Images/Pasted image 20250608210210.png",
+    "Images/Pasted image 20250610204356.png",
+    "Images/Pasted image 20250610204305.png",
+    "Images/Pasted image 20250610203604.png",
+    "Images/Pasted image 20250610203456.png",
+    "Images/Pasted image 20250610203308.png",
+    "Images/Pasted image 20250610202826.png",
+    "Images/Pasted image 20250610202728.png",
+    "Images/Pasted image 20250610201750.png",
+    "Images/Pasted image 20250610200747.png",
+    "Pentest/Report (Hafedh GUENICHI ING-4-SSIR-J-A).md",
     "AegisX/IDS & IPS.md",
     "AegisX/Gen-Z.md",
     "AegisX/Custom SIEM Phase X.md",
@@ -237,7 +236,6 @@
     "Malware/Exam.md",
     "Database Security/Resume.md",
     "Database Security/Examen I.md",
-    "Database Security/Examen II.md",
     "Conduit",
     "Images",
     "Pentest",

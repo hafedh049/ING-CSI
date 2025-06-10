@@ -1,0 +1,913 @@
+{
+  "edges": [
+    {
+      "fromNode": "6ab642ecd42c140d",
+      "fromSide": "right",
+      "id": "8773907fabcfa866",
+      "styleAttributes": {
+      },
+      "toNode": "a15f51080c831f1a",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "25097d2ce45538ee",
+      "fromSide": "right",
+      "id": "745666d014aa15b8",
+      "styleAttributes": {
+      },
+      "toNode": "a15f51080c831f1a",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "f8e2cca8334462ef",
+      "fromSide": "left",
+      "id": "4b7094b123c655c6",
+      "styleAttributes": {
+      },
+      "toNode": "a15f51080c831f1a",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "cd0c6b4f08ecd246",
+      "fromSide": "bottom",
+      "id": "6117a5d9b8d070e6",
+      "label": "Get feeds to fine-tune the DL model",
+      "styleAttributes": {
+      },
+      "toNode": "ef436fb8d107e77f",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "5bc6ace4ef992a44",
+      "fromSide": "top",
+      "id": "423f8780929e2fd6",
+      "styleAttributes": {
+      },
+      "toNode": "a15f51080c831f1a",
+      "toSide": "right"
+    },
+    {
+      "fromNode": "cd0c6b4f08ecd246",
+      "fromSide": "top",
+      "id": "213221ac6eb0c80f",
+      "styleAttributes": {
+      },
+      "toNode": "a15f51080c831f1a",
+      "toSide": "bottom"
+    },
+    {
+      "fromNode": "110264f3b578fa90",
+      "fromSide": "right",
+      "id": "1e494900c3251835",
+      "styleAttributes": {
+      },
+      "toNode": "bdf08877e887d4d3",
+      "toSide": "right"
+    },
+    {
+      "fromNode": "25553a5370fe17b0",
+      "fromSide": "top",
+      "id": "d946346fbf679408",
+      "label": "Analyzing Traffic",
+      "styleAttributes": {
+      },
+      "toEnd": "none",
+      "toNode": "73fadde6656b5851",
+      "toSide": "bottom"
+    },
+    {
+      "fromNode": "73fadde6656b5851",
+      "fromSide": "right",
+      "id": "c0e367f160fd445c",
+      "label": "CyberWarfare Zone",
+      "styleAttributes": {
+      },
+      "toEnd": "none",
+      "toNode": "5fce5ea7356b43d4",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "73fadde6656b5851",
+      "fromSide": "left",
+      "id": "5cba7334cf328115",
+      "label": "HonyNet Zone",
+      "styleAttributes": {
+      },
+      "toEnd": "none",
+      "toNode": "68aa09f07f20bcb5",
+      "toSide": "right"
+    },
+    {
+      "fromNode": "b8a582b9d444211a",
+      "fromSide": "top",
+      "id": "cb2f3aca4b9abcc8",
+      "styleAttributes": {
+      },
+      "toNode": "ca4081291a786731",
+      "toSide": "bottom"
+    },
+    {
+      "fromNode": "871f319dcf90165e",
+      "fromSide": "top",
+      "id": "f1d6302495999afa",
+      "styleAttributes": {
+      },
+      "toNode": "ca4081291a786731",
+      "toSide": "bottom"
+    },
+    {
+      "fromNode": "7dcfabe83ab87dc6",
+      "fromSide": "right",
+      "id": "073c34f856c071e9",
+      "styleAttributes": {
+      },
+      "toNode": "a54f95aa881496d6",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "b4351bd34e69817e",
+      "fromSide": "right",
+      "id": "3f2d297cae04b6af",
+      "styleAttributes": {
+      },
+      "toNode": "a54f95aa881496d6",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "795dc42d9a1f1eb2",
+      "fromSide": "right",
+      "id": "5ccf4d1dd003bcbc",
+      "styleAttributes": {
+      },
+      "toNode": "a54f95aa881496d6",
+      "toSide": "bottom"
+    },
+    {
+      "fromNode": "8d49087abb118284",
+      "fromSide": "top",
+      "id": "3aaa3c9b46f4e4e3",
+      "styleAttributes": {
+      },
+      "toNode": "d1442b58ad3522d8",
+      "toSide": "bottom"
+    },
+    {
+      "fromNode": "bdf08877e887d4d3",
+      "fromSide": "top",
+      "id": "660d8b09850373bd",
+      "styleAttributes": {
+      },
+      "toEnd": "none",
+      "toNode": "ef436fb8d107e77f",
+      "toSide": "bottom"
+    },
+    {
+      "fromNode": "94c152fc339f1ef0",
+      "fromSide": "top",
+      "id": "000c642155a44fef",
+      "label": "Internet Traffic",
+      "styleAttributes": {
+      },
+      "toNode": "25553a5370fe17b0",
+      "toSide": "bottom"
+    },
+    {
+      "fromNode": "1657dab11bb5a45a",
+      "fromSide": "right",
+      "id": "091f60d2961b1f80",
+      "label": "Enternal Attacks",
+      "styleAttributes": {
+      },
+      "toNode": "94c152fc339f1ef0",
+      "toSide": "left"
+    }
+  ],
+  "nodes": [
+    {
+      "color": "6",
+      "height": 1430,
+      "id": "68aa09f07f20bcb5",
+      "label": "Honey NET",
+      "styleAttributes": {
+        "border": "dashed"
+      },
+      "type": "group",
+      "width": 960,
+      "x": -2380,
+      "y": -270
+    },
+    {
+      "color": "5",
+      "height": 630,
+      "id": "5fce5ea7356b43d4",
+      "label": "CyberWarfare",
+      "styleAttributes": {
+      },
+      "type": "group",
+      "width": 800,
+      "x": -160,
+      "y": 530
+    },
+    {
+      "color": "3",
+      "height": 357,
+      "id": "8ae6b9ff1050d60d",
+      "label": "Threat Intel Core API",
+      "styleAttributes": {
+      },
+      "type": "group",
+      "width": 902,
+      "x": -211,
+      "y": -270
+    },
+    {
+      "height": 500,
+      "id": "31c88aa78e795956",
+      "label": "AD Services",
+      "styleAttributes": {
+      },
+      "type": "group",
+      "width": 440,
+      "x": -2340,
+      "y": 60
+    },
+    {
+      "color": "1",
+      "height": 300,
+      "id": "25553a5370fe17b0",
+      "label": "Firewall",
+      "styleAttributes": {
+      },
+      "type": "group",
+      "width": 708,
+      "x": -1072,
+      "y": 460
+    },
+    {
+      "color": "4",
+      "height": 300,
+      "id": "bdf08877e887d4d3",
+      "label": "Kaiber",
+      "styleAttributes": {
+      },
+      "type": "group",
+      "width": 680,
+      "x": -100,
+      "y": 760
+    },
+    {
+      "height": 500,
+      "id": "25f81d7bcd9a308b",
+      "label": "Mobile Applications Hosting",
+      "styleAttributes": {
+      },
+      "type": "group",
+      "width": 400,
+      "x": -1860,
+      "y": 60
+    },
+    {
+      "height": 420,
+      "id": "a0fcb1170e37e3a8",
+      "label": "FreeIPA Services",
+      "styleAttributes": {
+      },
+      "type": "group",
+      "width": 440,
+      "x": -2340,
+      "y": 620
+    },
+    {
+      "height": 420,
+      "id": "f1977f93a1767dc7",
+      "label": "Voix IP",
+      "styleAttributes": {
+      },
+      "type": "group",
+      "width": 400,
+      "x": -1860,
+      "y": 620
+    },
+    {
+      "color": "1",
+      "height": 179,
+      "id": "e25341305e00bcd0",
+      "label": "Red Team Agents",
+      "styleAttributes": {
+      },
+      "type": "group",
+      "width": 880,
+      "x": -2340,
+      "y": -190
+    },
+    {
+      "color": "#00ccff",
+      "height": 366,
+      "id": "73fadde6656b5851",
+      "label": "IPS / IDS",
+      "styleAttributes": {
+      },
+      "type": "group",
+      "width": 404,
+      "x": -920,
+      "y": -270
+    },
+    {
+      "color": "2",
+      "height": 120,
+      "id": "ef436fb8d107e77f",
+      "label": "Gen-Z Sentinel",
+      "styleAttributes": {
+      },
+      "type": "group",
+      "width": 680,
+      "x": -100,
+      "y": 580
+    },
+    {
+      "file": "Images/Pasted image 20250610200747.png",
+      "height": 109,
+      "id": "af108177923b2cdb",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "type": "file",
+      "width": 208,
+      "x": -1680,
+      "y": -154
+    },
+    {
+      "color": "5",
+      "height": 60,
+      "id": "668be4b66acebdfe",
+      "styleAttributes": {
+        "border": "dashed",
+        "shape": null,
+        "textAlign": null
+      },
+      "text": "**PODS**",
+      "type": "text",
+      "width": 120,
+      "x": -1714,
+      "y": 520
+    },
+    {
+      "file": "Images/Pasted image 20250610203308.png",
+      "height": 130,
+      "id": "24174fc655690269",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "type": "file",
+      "width": 130,
+      "x": -1829,
+      "y": 354
+    },
+    {
+      "file": "Images/Pasted image 20250610202728.png",
+      "height": 100,
+      "id": "3ca5278ad720ee04",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "type": "file",
+      "width": 100,
+      "x": -1829,
+      "y": 113
+    },
+    {
+      "file": "Images/Pasted image 20250610203604.png",
+      "height": 140,
+      "id": "2e5841996de238f1",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "type": "file",
+      "width": 281,
+      "x": -1794,
+      "y": 239
+    },
+    {
+      "color": "5",
+      "height": 60,
+      "id": "5b44a0e884578885",
+      "styleAttributes": {
+        "border": "dashed",
+        "shape": null,
+        "textAlign": null
+      },
+      "text": "**Internal Attacks**",
+      "type": "text",
+      "width": 196,
+      "x": -1910,
+      "y": -45
+    },
+    {
+      "file": "Images/Pasted image 20250610201750.png",
+      "height": 164,
+      "id": "d1442b58ad3522d8",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "type": "file",
+      "width": 164,
+      "x": -1740,
+      "y": 616
+    },
+    {
+      "file": "Images/Pasted image 20250610203456.png",
+      "height": 130,
+      "id": "e5e0d2b95d62c645",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "type": "file",
+      "width": 260,
+      "x": -1680,
+      "y": 379
+    },
+    {
+      "file": "Images/Pasted image 20250610202826.png",
+      "height": 216,
+      "id": "f6910eefe316d7a9",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "type": "file",
+      "width": 288,
+      "x": -1694,
+      "y": 55
+    },
+    {
+      "file": "Images/Pasted image 20250610204356.png",
+      "height": 175,
+      "id": "1657dab11bb5a45a",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "type": "file",
+      "width": 175,
+      "x": -1320,
+      "y": 985
+    },
+    {
+      "color": "5",
+      "height": 60,
+      "id": "6c2689085735531b",
+      "styleAttributes": {
+        "border": "dashed",
+        "shape": null,
+        "textAlign": "center"
+      },
+      "text": "**PODS**",
+      "type": "text",
+      "width": 120,
+      "x": -1714,
+      "y": 1011
+    },
+    {
+      "color": "6",
+      "height": 60,
+      "id": "58054f5c8a1426f9",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "**192.168.2.0/24**",
+      "type": "text",
+      "width": 233,
+      "x": -2000,
+      "y": 1100
+    },
+    {
+      "file": "Images/Pasted image 20250608104056.png",
+      "height": 171,
+      "id": "7dcfabe83ab87dc6",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "type": "file",
+      "width": 130,
+      "x": -2324,
+      "y": 609
+    },
+    {
+      "color": "5",
+      "height": 60,
+      "id": "7fe9679fa4aa9864",
+      "styleAttributes": {
+        "border": "dashed",
+        "shape": null,
+        "textAlign": "center"
+      },
+      "text": "**VMs**",
+      "type": "text",
+      "width": 120,
+      "x": -2180,
+      "y": 1011
+    },
+    {
+      "file": "Images/Pasted image 20250608102215.png",
+      "height": 89,
+      "id": "871f319dcf90165e",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "type": "file",
+      "width": 158,
+      "x": -2324,
+      "y": 431
+    },
+    {
+      "color": "5",
+      "height": 60,
+      "id": "6e1b28b0d2be21eb",
+      "styleAttributes": {
+        "border": "dashed",
+        "shape": null,
+        "textAlign": "center"
+      },
+      "text": "**VMs**",
+      "type": "text",
+      "width": 120,
+      "x": -2190,
+      "y": 520
+    },
+    {
+      "file": "Images/Pasted image 20250608200507.png",
+      "height": 82,
+      "id": "8d49087abb118284",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "type": "file",
+      "width": 140,
+      "x": -1724,
+      "y": 909
+    },
+    {
+      "file": "Images/Pasted image 20250608104743.png",
+      "height": 85,
+      "id": "b4351bd34e69817e",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "type": "file",
+      "width": 85,
+      "x": -2304,
+      "y": 780
+    },
+    {
+      "file": "Images/Pasted image 20250608105204.png",
+      "height": 60,
+      "id": "795dc42d9a1f1eb2",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "type": "file",
+      "width": 79,
+      "x": -2298,
+      "y": 920
+    },
+    {
+      "file": "Images/Pasted image 20250608103132.png",
+      "height": 126,
+      "id": "a54f95aa881496d6",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "type": "file",
+      "width": 240,
+      "x": -2084,
+      "y": 780
+    },
+    {
+      "file": "Images/Pasted image 20250610200425.png",
+      "height": 115,
+      "id": "c8a122f75c1677de",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "type": "file",
+      "width": 159,
+      "x": -2259,
+      "y": -167
+    },
+    {
+      "file": "Images/Pasted image 20250608102118.png",
+      "height": 235,
+      "id": "ca4081291a786731",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "type": "file",
+      "width": 235,
+      "x": -2283,
+      "y": 17
+    },
+    {
+      "color": "5",
+      "height": 60,
+      "id": "bcb4889f9529e725",
+      "styleAttributes": {
+        "border": "dashed",
+        "shape": null,
+        "textAlign": null
+      },
+      "text": "**PODS**",
+      "type": "text",
+      "width": 120,
+      "x": -2048,
+      "y": -45
+    },
+    {
+      "file": "Images/Pasted image 20250610200559.png",
+      "height": 115,
+      "id": "77bc5dfe77a4cb69",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "type": "file",
+      "width": 403,
+      "x": -2084,
+      "y": -136
+    },
+    {
+      "file": "Images/Pasted image 20250608102328.png",
+      "height": 105,
+      "id": "b8a582b9d444211a",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "type": "file",
+      "width": 100,
+      "x": -2130,
+      "y": 379
+    },
+    {
+      "file": "Images/Pasted image 20250610192323.png",
+      "height": 96,
+      "id": "c15fe47ea18d09b1",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "type": "file",
+      "width": 96,
+      "x": 180,
+      "y": 594
+    },
+    {
+      "file": "Images/Pasted image 20250610192505.png",
+      "height": 88,
+      "id": "35e44bbfe44d7937",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "type": "file",
+      "width": 88,
+      "x": 400,
+      "y": 598
+    },
+    {
+      "file": "Images/Pasted image 20250610191813.png",
+      "height": 120,
+      "id": "7131ea39a70e6b63",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "type": "file",
+      "width": 214,
+      "x": -80,
+      "y": 580
+    },
+    {
+      "color": "4",
+      "height": 60,
+      "id": "110264f3b578fa90",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "**CI / CD & Versioning**",
+      "type": "text",
+      "width": 260,
+      "x": 367,
+      "y": 397
+    },
+    {
+      "color": "5",
+      "height": 60,
+      "id": "70355e2363bd413d",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "**192.168.1.0/24**",
+      "type": "text",
+      "width": 233,
+      "x": 134,
+      "y": 1100
+    },
+    {
+      "file": "Images/Pasted image 20250610194909.png",
+      "height": 260,
+      "id": "87f17d3fecb99e0d",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "type": "file",
+      "width": 415,
+      "x": 237,
+      "y": 787
+    },
+    {
+      "file": "Images/Pasted image 20250610194705.png",
+      "height": 157,
+      "id": "c0250b2c260d3551",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "type": "file",
+      "width": 201,
+      "x": -100,
+      "y": 840
+    },
+    {
+      "file": "Images/Pasted image 20250610194745.png",
+      "height": 160,
+      "id": "23d182eebcb39c35",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "type": "file",
+      "width": 160,
+      "x": 148,
+      "y": 837
+    },
+    {
+      "file": "Images/Pasted image 20250608174120.png",
+      "height": 157,
+      "id": "f8e2cca8334462ef",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "type": "file",
+      "width": 279,
+      "x": 393,
+      "y": -270
+    },
+    {
+      "file": "Images/Pasted image 20250608174314.png",
+      "height": 60,
+      "id": "a15f51080c831f1a",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "type": "file",
+      "width": 313,
+      "x": 107,
+      "y": -143
+    },
+    {
+      "file": "Images/Pasted image 20250610193257.png",
+      "height": 146,
+      "id": "5bc6ace4ef992a44",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "type": "file",
+      "width": 260,
+      "x": 412,
+      "y": -67
+    },
+    {
+      "file": "Images/Pasted image 20250608174007.png",
+      "height": 152,
+      "id": "25097d2ce45538ee",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "type": "file",
+      "width": 225,
+      "x": -171,
+      "y": -248
+    },
+    {
+      "file": "Images/Pasted image 20250608174550.png",
+      "height": 102,
+      "id": "6ab642ecd42c140d",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "type": "file",
+      "width": 144,
+      "x": -130,
+      "y": -67
+    },
+    {
+      "file": "Images/Pasted image 20250610193546.png",
+      "height": 133,
+      "id": "cd0c6b4f08ecd246",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "type": "file",
+      "width": 236,
+      "x": 69,
+      "y": -29
+    },
+    {
+      "file": "Images/Pasted image 20250608190140.png",
+      "height": 88,
+      "id": "eac9789ca60d4490",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "type": "file",
+      "width": 108,
+      "x": -644,
+      "y": -249
+    },
+    {
+      "file": "Images/Pasted image 20250608190238.png",
+      "height": 78,
+      "id": "adc2250ae3ff6db4",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "type": "file",
+      "width": 156,
+      "x": -905,
+      "y": -232
+    },
+    {
+      "file": "Images/Pasted image 20250608185841.png",
+      "height": 94,
+      "id": "f78603f24ede0dc9",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "type": "file",
+      "width": 119,
+      "x": -762,
+      "y": -136
+    },
+    {
+      "file": "Images/Pasted image 20250608190448.png",
+      "height": 68,
+      "id": "8f9f899138fb2638",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "type": "file",
+      "width": 120,
+      "x": -905,
+      "y": -43
+    },
+    {
+      "file": "Images/Pasted image 20250608191728.png",
+      "height": 98,
+      "id": "a0d85405addef071",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "type": "file",
+      "width": 104,
+      "x": -666,
+      "y": -24
+    },
+    {
+      "file": "Images/Pasted image 20250608113458.png",
+      "height": 339,
+      "id": "5baada9c1047e5a9",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "type": "file",
+      "width": 339,
+      "x": -1054,
+      "y": 441
+    },
+    {
+      "file": "Images/Pasted image 20250610204305.png",
+      "height": 140,
+      "id": "94c152fc339f1ef0",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "type": "file",
+      "width": 182,
+      "x": -793,
+      "y": 997
+    },
+    {
+      "file": "Images/Pasted image 20250608113715.png",
+      "height": 181,
+      "id": "31a8cd8bf61c3421",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "type": "file",
+      "width": 272,
+      "x": -704,
+      "y": 520
+    }
+  ]
+}
