@@ -15,9 +15,9 @@
               "state": {
                 "file": "AegisX/Architecture.canvas",
                 "viewState": {
-                  "x": 1466.5283018867924,
-                  "y": 835.9857016509438,
-                  "zoom": -0.004529658480514676
+                  "x": -201.8266228485304,
+                  "y": -1035.2985817738409,
+                  "zoom": -1.7058212588285402
                 }
               },
               "icon": "lucide-layout-dashboard",
@@ -81,7 +81,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 201.5
+    "width": 201.5,
+    "collapsed": true
   },
   "right": {
     "id": "d582e5c243f931f6",
@@ -198,19 +199,19 @@
   },
   "active": "eaadc3c546b92097",
   "lastOpenFiles": [
-    "Images/Pasted image 20250608191728.png",
-    "Images/Pasted image 20250608190448.png",
-    "Images/Pasted image 20250608190436.png",
-    "Images/Pasted image 20250608190238.png",
-    "Images/Pasted image 20250608190140.png",
-    "AegisX/IDS & IPS.md",
-    "Images/Pasted image 20250608171654.png",
+    "Pentest/Report (Hafedh GUENICHI ING-4-SSIR-J-A).md",
+    "Images/Pasted image 20250608222315.png",
+    "Images/Pasted image 20250608225707.png",
+    "Images/Pasted image 20250608225446.png",
+    "Images/Pasted image 20250608223659.png",
+    "Images/Pasted image 20250608223033.png",
+    "Images/Pasted image 20250608222752.png",
+    "Images/Pasted image 20250608222642.png",
+    "Images/Pasted image 20250608200507.png",
     "AegisX/Architecture.canvas",
-    "Images/Pasted image 20250608185841.png",
-    "Images/Pasted image 20250608175012.png",
-    "Images/Pasted image 20250608174852.png",
-    "Images/Pasted image 20250608174550.png",
-    "Images/Pasted image 20250608174445.png",
+    "Images/Pasted image 20250608210259.png",
+    "Images/Pasted image 20250608210210.png",
+    "AegisX/IDS & IPS.md",
     "AegisX/Gen-Z.md",
     "AegisX/Custom SIEM Phase X.md",
     "AegisX/Custom SIEM Phase IX.md",
@@ -226,7 +227,6 @@
     "AegisX/Summer Project.canvas",
     "AegisX/Summer Project.md",
     "AegisX/Custom SIEM Steps.md",
-    "Pentest/Report (Hafedh GUENICHI ING-4-SSIR-J-A).md",
     "AegisX",
     "Pentest/Resume Pentest.md",
     "Pentest/Examen SOIR.md",
